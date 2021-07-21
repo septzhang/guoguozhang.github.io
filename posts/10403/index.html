@@ -16,11 +16,13 @@
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="SeptZhang的养猪站">
+  <meta name="description" content="
+各位图床，我一拳下去，你们可能会死。
+使用Github作为图床，配置PicGo+Typora,让你的博客生活直接起飞！！">
   <meta name="author" content="SeptZhang">
   <meta name="keywords" content="Java,Mysql,SpringBoot">
   
-  <title>SQLite的使用 - SeptZhang</title>
+  <title>‘免费又好用的图床谁不爱呢’ - SeptZhang</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
@@ -202,7 +204,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="SQLite的使用">
+            <span class="h2" id="subtitle" title="‘免费又好用的图床谁不爱呢’">
               
             </span>
 
@@ -212,8 +214,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-07-15 09:51" pubdate>
-        2021年7月15日 上午
+      <time datetime="2021-07-21 11:02" pubdate>
+        2021年7月21日 上午
       </time>
     </span>
   
@@ -224,7 +226,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      564 字
+      1.1k 字
     </span>
   
 
@@ -234,7 +236,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       俺猜宁得用 
-      6
+      11
        分钟
     </span>
   
@@ -272,65 +274,87 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">SQLite的使用</h1>
+            <h1 style="display: none">‘免费又好用的图床谁不爱呢’</h1>
             
               <p class="note note-info">
                 
-                  本文最后更新于：6 天前
+                  本文最后更新于：1 小时前
                 
               </p>
             
             <div class="markdown-body">
-              <span id="more"></span>
+              <p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/v2-c26af88c87a3e46e7293621c8606f7fb_r.jpg" srcset="/img/loading.gif" lazyload alt="v2-c26af88c87a3e46e7293621c8606f7fb_r"></p>
+<p>各位图床，我一拳下去，你们可能会死。</p>
+<p>使用Github作为图床，配置PicGo+Typora,让你的博客生活直接起飞！！</p>
+<span id="more"></span>
 
-<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><h2 id="SQLite-简介"><a href="#SQLite-简介" class="headerlink" title="SQLite 简介"></a>SQLite 简介</h2><p>SQLite是一个软件库，实现了自给自足的、无服务器的、零配置的、事务性的 SQL 数据库引擎。SQLite是一个增长最快的数据库引擎，这是在普及方面的增长，与它的尺寸大小无关。<strong>SQLite 源代码不受版权限制</strong>。</p>
-<h2 id="什么是-SQLite？"><a href="#什么是-SQLite？" class="headerlink" title="什么是 SQLite？"></a>什么是 SQLite？</h2><p>SQLite是一个<strong>进程内的库</strong>，实现了自给自足的、无服务器的、零配置的、事务性的 SQL 数据库引擎。它是一个<strong>零配置</strong>的数据库，这意味着与其他数据库不一样，您<strong>不需要在系统中配置</strong>。</p>
-<p>就像其他数据库，SQLite 引擎不是一个独立的进程，可以按应用程序需求进行静态或动态连接。SQLite 直接访问其存储文件。</p>
-<h2 id="为什么要用-SQLite？"><a href="#为什么要用-SQLite？" class="headerlink" title="为什么要用 SQLite？"></a>为什么要用 SQLite？</h2><ul>
-<li>不需要一个单独的服务器进程或操作的系统（<strong>无服务器的</strong>）。</li>
-<li>SQLite <strong>不需要配置</strong>，这意味着不需要安装或管理。</li>
-<li>一个完整的 SQLite 数据库是存储在一个单一的<strong>跨平台</strong>的磁盘文件。</li>
-<li>SQLite 是非常小的，是<strong>轻量级</strong>的，完全配置时小于 400KiB，省略可选功能配置时小于250KiB。</li>
-<li>SQLite 是<strong>自给自足</strong>的，这意味着不需要任何外部的依赖。</li>
-<li>SQLite 事务是完全兼容 ACID 的，允许从<strong>多个进程或线程安全访问</strong>。</li>
-<li>SQLite 支持 <strong>SQL92（SQL2）标准</strong>的大多数查询语言的功能。</li>
-<li>SQLite 使用 <strong>ANSI-C 编写</strong>的，并提供了简单和易于使用的 API。</li>
-<li>SQLite 可在 UNIX（Linux, Mac OS-X, Android, iOS）和 Windows（Win32, WinCE, WinRT）中运行。</li>
-</ul>
-<h2 id="SQLite-局限性"><a href="#SQLite-局限性" class="headerlink" title="SQLite 局限性"></a>SQLite 局限性</h2><table>
-<thead>
-<tr>
-<th align="center"><strong>特性</strong></th>
-<th align="center"><strong>描述</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">RIGHT OUTER JOIN</td>
-<td align="center">只实现了 LEFT OUTER JOIN。</td>
-</tr>
-<tr>
-<td align="center">FULL OUTER JOIN</td>
-<td align="center">只实现了 LEFT OUTER JOIN。</td>
-</tr>
-<tr>
-<td align="center">ALTER TABLE</td>
-<td align="center">支持 RENAME TABLE 和 ALTER TABLE 的 ADD COLUMN variants 命令，不支持 DROP COLUMN、ALTER COLUMN、ADD CONSTRAINT。</td>
-</tr>
-<tr>
-<td align="center">Trigger 支持</td>
-<td align="center">支持 FOR EACH ROW 触发器，但不支持 FOR EACH STATEMENT 触发器。</td>
-</tr>
-<tr>
-<td align="center">VIEWs</td>
-<td align="center">在 SQLite 中，视图是只读的。您不可以在视图上执行 DELETE、INSERT 或 UPDATE 语句。</td>
-</tr>
-<tr>
-<td align="center">GRANT 和 REVOKE</td>
-<td align="center">可以应用的唯一的访问权限是底层操作系统的正常文件访问权限。</td>
-</tr>
-</tbody></table>
-<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>参考：<a target="_blank" rel="noopener" href="https://www.runoob.com/sqlite/sqlite-installation.html">SQLite 安装 | 菜鸟教程 (runoob.com)</a></p>
-<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a target="_blank" rel="noopener" href="https://www.runoob.com/sqlite/sqlite-tutorial.html">SQLite 教程 | 菜鸟教程 (runoob.com)</a></p>
+<h1 id="配置Github"><a href="#配置Github" class="headerlink" title="配置Github"></a>配置Github</h1><h2 id="建立图片仓库"><a href="#建立图片仓库" class="headerlink" title="建立图片仓库"></a>建立图片仓库</h2><p>在Github新建一个仓库，用来存储，你的图片。</p>
+<blockquote>
+<ol>
+<li>在Github主页点击左上方的new按钮，准备新建仓库</li>
+<li>输入仓库名、仓库描述、选择仓库为公开的、初始化README文件，点击【Create repository】按钮创建仓库</li>
+</ol>
+</blockquote>
+<h2 id="生成一个Token"><a href="#生成一个Token" class="headerlink" title="生成一个Token"></a>生成一个Token</h2><blockquote>
+<p>Token是服务端生成的一串字符串，以作客户端进行请求的一个令牌，客户端只需带上这个Token前来请求数据即可，无需带上用户名和密码。</p>
+<p>Token的目的是为了减轻服务器的压力，减少频繁的查询数据库，使服务器更加健壮。</p>
+</blockquote>
+<p>点击 <a target="_blank" rel="noopener" href="https://github.com/settings/tokens">新建Token</a> ，创建一个Token。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/image-20210721112516051.png" srcset="/img/loading.gif" lazyload alt="image-20210721112516051"></p>
+<p>如图选择，点击最后的<code>Generate token</code>的绿色按钮生成token。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/image-20210721112605279.png" srcset="/img/loading.gif" lazyload alt="image-20210721112605279"></p>
+<p>这个token生成后<strong>只会显示一次</strong>！你要把这个token复制一下存到其他地方以备以后要用。</p>
+<p>找不到了也不要担心，<strong>重新生成</strong>一个就好了。</p>
+<h1 id="配置PicGo"><a href="#配置PicGo" class="headerlink" title="配置PicGo"></a>配置PicGo</h1><blockquote>
+<p>PicGo是一个图床管理软件，配置后可以很方便的进行图片上传的操作，还有很多插件的支持，例如上传图片自动压缩、添加水印等… … 最重要的是可以与Typora进行交互，实现书写markdown中粘贴即上传的效果！</p>
+<p>当Tyora+PicGo的时候其他图床直接没有活路了/狗头</p>
+</blockquote>
+<h2 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h2><p>PicGo在Github的页面：<a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/PicGo">https://github.com/Molunerfinn/PicGo</a><br>下载地址：<a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/PicGo/releases">Releases · Molunerfinn/PicGo (github.com)</a></p>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>下载安装好后，打开软件，选择【图床设置】-&gt;【GitHub设置】，跳转到如下界面：<br><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/image-20210721113618491.png" srcset="/img/loading.gif" lazyload alt="image-20210721113618491"></p>
+<p>注意：</p>
+<p>【仓库名】-&gt; 指定图片存储在哪个仓库：你的用户名/仓库(图床)名。<br>【设定分支名】 -&gt; 指定一个分支：master（确保为已有分支）<br>【Token】 -&gt; 通信标识：步骤3生成的Token<br>【指定存储路径】 -&gt; 在仓库下具体存储路径，会自动创建此文件夹：路径/<br>【自定义域名】 -&gt; 它的作用是，在图片上传后，PicGo 会按照【自定义域名+储存路径+上传的图片名】的方式生成访问链接，并放到粘贴板上，因为我们要使用 jsDelivr 加速访问，所以可以设置为<code>https://cdn.jsdelivr.net/gh/用户名/图床仓库名</code></p>
+<h2 id="保存"><a href="#保存" class="headerlink" title="保存"></a>保存</h2><p>点击确定，保存设置。根据需求设为默认图床。</p>
+<h1 id="配置CDN加速"><a href="#配置CDN加速" class="headerlink" title="配置CDN加速"></a>配置CDN加速</h1><h2 id="免费CDN：jsDelivr"><a href="#免费CDN：jsDelivr" class="headerlink" title="免费CDN：jsDelivr"></a>免费CDN：jsDelivr</h2><blockquote>
+<p>CDN：内容分发网络。配置使得网络传输的更快，更稳定。</p>
+<p>jsDelivr：是一个免费开源的 CDN 解决方案</p>
+</blockquote>
+<ol>
+<li><p>新建GitHub仓库，参考上述步骤新建</p>
+</li>
+<li><p>克隆项目到本地(需要安装git)</p>
+</li>
+<li><p>在本地右键-&gt;【Git Bash Here】，执行<code>git clone [项目ssh下载地址]</code></p>
+</li>
+<li><p>随便选择一个文件放到本地git库中，右键-&gt;【Git Bash Here】执行以下命令(第一次使用git需要指定邮箱和用户名)</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs awk">git status					<span class="hljs-regexp">//</span>查看状态<br>git add [文件]				<span class="hljs-regexp">//</span>添加文件到暂存区<br>git commit -m <span class="hljs-string">&quot;初始化仓库&quot;</span> 	<span class="hljs-regexp">//</span>提交到仓库<br>git push					<span class="hljs-regexp">//</span>推送至远程仓库<br></code></pre></td></tr></table></figure></li>
+<li><p>在github项目主页面，点击【Create a new release】</p>
+<p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/image-20210721114451238.png" srcset="/img/loading.gif" lazyload alt="image-20210721114451238"></p>
+</li>
+<li><p>自定义版本号，点击【Publish release】按钮发布</p>
+<p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/image-20210721114802249.png" srcset="/img/loading.gif" lazyload alt="image-20210721114802249"></p>
+</li>
+<li><p>配置完成，使用方法：<code>https://https://cdn.jsdelivr.net/gh/用户名/仓库名@版本号/文件路径</code></p>
+</li>
+</ol>
+<h2 id="配置Typora"><a href="#配置Typora" class="headerlink" title="配置Typora"></a>配置Typora</h2><p>进行如下配置后，可以在编写markdown时<strong>直接粘贴图片</strong>，Typora会调用PicGo，实现图片上传。</p>
+<ol>
+<li><p>要求Typora的版本在0.9.84及以上，版本低于此的，【偏好设置】-【版本更新】</p>
+</li>
+<li><p>打开PicGo 【设置】 -【设置Server】，进行如下配置(一般都为默认)</p>
+<p><img src="C:\Users\septzhang\AppData\Roaming\Typora\typora-user-images\image-20210721114911210.png" srcset="/img/loading.gif" lazyload alt="image-20210721114911210"></p>
+</li>
+<li><p>打开Typora，选择【偏好设置】 - 【图像】</p>
+</li>
+<li><p>进行如下设置</p>
+<p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/image-20210721115146479.png" srcset="/img/loading.gif" lazyload alt="image-20210721115146479"></p>
+</li>
+<li><p>点击验证图片上传选项，观察success是否为true。成功之后打开GitHub图床仓库，就可以看到两个Typora的图标了~说明配置非常成功。</p>
+</li>
+<li><p>现在在Typora中粘贴图片，会自动上传到Github图床，并且自动替换连接，非常省心省事~~~</p>
+</li>
+</ol>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a target="_blank" rel="noopener" href="https://picgo.github.io/PicGo-Doc/zh/guide/config.html#github%E5%9B%BE%E5%BA%8A">官方配置手册 | PicGo</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_36376089/article/details/107429913">使用Github作为图床，配置PicGo+Typora_我的意大利炮呢的博客-CSDN博客</a></p>
 
             </div>
             <hr>
@@ -340,7 +364,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a>
+                      <a class="hover-with-bg" href="/categories/%E5%A5%87%E6%80%AA%E7%9A%84%E7%9F%A5%E8%AF%86/">奇怪的知识</a>
                     
                   </div>
                 
@@ -348,9 +372,11 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/SQLite/">SQLite</a>
+                      <a class="hover-with-bg" href="/tags/%E6%8A%80%E5%B7%A7/">技巧</a>
                     
                       <a class="hover-with-bg" href="/tags/%E9%85%8D%E7%BD%AE/">配置</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E9%80%9A%E8%AF%86/">通识</a>
                     
                   </div>
                 
@@ -367,18 +393,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/posts/13699/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Springboot的日志解决方案</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/posts/11477/">
-                        <span class="hidden-mobile">AndroidStudio的使用</span>
+                      <a href="/posts/13699/">
+                        <span class="hidden-mobile">Springboot的日志解决方案</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -395,7 +415,7 @@
                   
                 
                 
-  <div id="SOHUCS" sid='https://septzhang.link/posts/61119/'></div>
+  <div id="SOHUCS" sid='https://septzhang.link/posts/10403/'></div>
   <script type="text/javascript">
     Fluid.utils.loadComments('#SOHUCS', function() {
       var appid = 'cyvoRhKD1';

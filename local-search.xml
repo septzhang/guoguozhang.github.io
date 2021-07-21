@@ -4,6 +4,54 @@
   
   
   <entry>
+    <title>‘免费又好用的图床谁不爱呢’</title>
+    <link href="/posts/10403/"/>
+    <url>/posts/10403/</url>
+    
+    <content type="html"><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/v2-c26af88c87a3e46e7293621c8606f7fb_r.jpg" alt="v2-c26af88c87a3e46e7293621c8606f7fb_r"></p><p>各位图床，我一拳下去，你们可能会死。</p><p>使用Github作为图床，配置PicGo+Typora,让你的博客生活直接起飞！！</p><span id="more"></span><h1 id="配置Github"><a href="#配置Github" class="headerlink" title="配置Github"></a>配置Github</h1><h2 id="建立图片仓库"><a href="#建立图片仓库" class="headerlink" title="建立图片仓库"></a>建立图片仓库</h2><p>在Github新建一个仓库，用来存储，你的图片。</p><blockquote><ol><li>在Github主页点击左上方的new按钮，准备新建仓库</li><li>输入仓库名、仓库描述、选择仓库为公开的、初始化README文件，点击【Create repository】按钮创建仓库</li></ol></blockquote><h2 id="生成一个Token"><a href="#生成一个Token" class="headerlink" title="生成一个Token"></a>生成一个Token</h2><blockquote><p>Token是服务端生成的一串字符串，以作客户端进行请求的一个令牌，客户端只需带上这个Token前来请求数据即可，无需带上用户名和密码。</p><p>Token的目的是为了减轻服务器的压力，减少频繁的查询数据库，使服务器更加健壮。</p></blockquote><p>点击 <a href="https://github.com/settings/tokens">新建Token</a> ，创建一个Token。</p><p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/image-20210721112516051.png" alt="image-20210721112516051"></p><p>如图选择，点击最后的<code>Generate token</code>的绿色按钮生成token。</p><p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/image-20210721112605279.png" alt="image-20210721112605279"></p><p>这个token生成后<strong>只会显示一次</strong>！你要把这个token复制一下存到其他地方以备以后要用。</p><p>找不到了也不要担心，<strong>重新生成</strong>一个就好了。</p><h1 id="配置PicGo"><a href="#配置PicGo" class="headerlink" title="配置PicGo"></a>配置PicGo</h1><blockquote><p>PicGo是一个图床管理软件，配置后可以很方便的进行图片上传的操作，还有很多插件的支持，例如上传图片自动压缩、添加水印等… … 最重要的是可以与Typora进行交互，实现书写markdown中粘贴即上传的效果！</p><p>当Tyora+PicGo的时候其他图床直接没有活路了/狗头</p></blockquote><h2 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h2><p>PicGo在Github的页面：<a href="https://github.com/Molunerfinn/PicGo">https://github.com/Molunerfinn/PicGo</a><br>下载地址：<a href="https://github.com/Molunerfinn/PicGo/releases">Releases · Molunerfinn/PicGo (github.com)</a></p><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>下载安装好后，打开软件，选择【图床设置】-&gt;【GitHub设置】，跳转到如下界面：<br><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/image-20210721113618491.png" alt="image-20210721113618491"></p><p>注意：</p><p>【仓库名】-&gt; 指定图片存储在哪个仓库：你的用户名/仓库(图床)名。<br>【设定分支名】 -&gt; 指定一个分支：master（确保为已有分支）<br>【Token】 -&gt; 通信标识：步骤3生成的Token<br>【指定存储路径】 -&gt; 在仓库下具体存储路径，会自动创建此文件夹：路径/<br>【自定义域名】 -&gt; 它的作用是，在图片上传后，PicGo 会按照【自定义域名+储存路径+上传的图片名】的方式生成访问链接，并放到粘贴板上，因为我们要使用 jsDelivr 加速访问，所以可以设置为<code>https://cdn.jsdelivr.net/gh/用户名/图床仓库名</code></p><h2 id="保存"><a href="#保存" class="headerlink" title="保存"></a>保存</h2><p>点击确定，保存设置。根据需求设为默认图床。</p><h1 id="配置CDN加速"><a href="#配置CDN加速" class="headerlink" title="配置CDN加速"></a>配置CDN加速</h1><h2 id="免费CDN：jsDelivr"><a href="#免费CDN：jsDelivr" class="headerlink" title="免费CDN：jsDelivr"></a>免费CDN：jsDelivr</h2><blockquote><p>CDN：内容分发网络。配置使得网络传输的更快，更稳定。</p><p>jsDelivr：是一个免费开源的 CDN 解决方案</p></blockquote><ol><li><p>新建GitHub仓库，参考上述步骤新建</p></li><li><p>克隆项目到本地(需要安装git)</p></li><li><p>在本地右键-&gt;【Git Bash Here】，执行<code>git clone [项目ssh下载地址]</code></p></li><li><p>随便选择一个文件放到本地git库中，右键-&gt;【Git Bash Here】执行以下命令(第一次使用git需要指定邮箱和用户名)</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs awk">git status<span class="hljs-regexp">//</span>查看状态<br>git add [文件]<span class="hljs-regexp">//</span>添加文件到暂存区<br>git commit -m <span class="hljs-string">&quot;初始化仓库&quot;</span> <span class="hljs-regexp">//</span>提交到仓库<br>git push<span class="hljs-regexp">//</span>推送至远程仓库<br></code></pre></td></tr></table></figure></li><li><p>在github项目主页面，点击【Create a new release】</p><p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/image-20210721114451238.png" alt="image-20210721114451238"></p></li><li><p>自定义版本号，点击【Publish release】按钮发布</p><p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/image-20210721114802249.png" alt="image-20210721114802249"></p></li><li><p>配置完成，使用方法：<code>https://https://cdn.jsdelivr.net/gh/用户名/仓库名@版本号/文件路径</code></p></li></ol><h2 id="配置Typora"><a href="#配置Typora" class="headerlink" title="配置Typora"></a>配置Typora</h2><p>进行如下配置后，可以在编写markdown时<strong>直接粘贴图片</strong>，Typora会调用PicGo，实现图片上传。</p><ol><li><p>要求Typora的版本在0.9.84及以上，版本低于此的，【偏好设置】-【版本更新】</p></li><li><p>打开PicGo 【设置】 -【设置Server】，进行如下配置(一般都为默认)</p><p><img src="C:\Users\septzhang\AppData\Roaming\Typora\typora-user-images\image-20210721114911210.png" alt="image-20210721114911210"></p></li><li><p>打开Typora，选择【偏好设置】 - 【图像】</p></li><li><p>进行如下设置</p><p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/image-20210721115146479.png" alt="image-20210721115146479"></p></li><li><p>点击验证图片上传选项，观察success是否为true。成功之后打开GitHub图床仓库，就可以看到两个Typora的图标了~说明配置非常成功。</p></li><li><p>现在在Typora中粘贴图片，会自动上传到Github图床，并且自动替换连接，非常省心省事~~~</p></li></ol><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://picgo.github.io/PicGo-Doc/zh/guide/config.html#github%E5%9B%BE%E5%BA%8A">官方配置手册 | PicGo</a></p><p><a href="https://blog.csdn.net/qq_36376089/article/details/107429913">使用Github作为图床，配置PicGo+Typora_我的意大利炮呢的博客-CSDN博客</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>奇怪的知识</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>技巧</tag>
+      
+      <tag>配置</tag>
+      
+      <tag>通识</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Springboot的日志解决方案</title>
+    <link href="/posts/13699/"/>
+    <url>/posts/13699/</url>
+    
+    <content type="html"><![CDATA[<span id="more"></span>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>SQLite的使用</title>
     <link href="/posts/61119/"/>
     <url>/posts/61119/</url>
@@ -402,9 +450,9 @@
       
       <tag>配置</tag>
       
-      <tag>Spring Boot</tag>
-      
       <tag>Spring Security</tag>
+      
+      <tag>Spring Boot</tag>
       
     </tags>
     

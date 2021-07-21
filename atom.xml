@@ -6,7 +6,7 @@
   <link href="https://septzhang.link/atom.xml" rel="self"/>
   
   <link href="https://septzhang.link/"/>
-  <updated>2021-07-15T01:51:01.000Z</updated>
+  <updated>2021-07-21T03:02:09.000Z</updated>
   <id>https://septzhang.link/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>‘免费又好用的图床谁不爱呢’</title>
+    <link href="https://septzhang.link/posts/10403/"/>
+    <id>https://septzhang.link/posts/10403/</id>
+    <published>2021-07-21T03:02:09.000Z</published>
+    <updated>2021-07-21T03:02:09.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/v2-c26af88c87a3e46e7293621c8606f7fb_r.jpg&quot; alt=&quot;v2-c26af88c87a3e46e7293621c8606f7fb_r&quot;&gt;&lt;/p&gt;
+&lt;p&gt;各位图床，我一拳下去，你们可能会死。&lt;/p&gt;
+&lt;p&gt;使用Github作为图床，配置PicGo+Typora,让你的博客生活直接起飞！！&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="奇怪的知识" scheme="https://septzhang.link/categories/%E5%A5%87%E6%80%AA%E7%9A%84%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="技巧" scheme="https://septzhang.link/tags/%E6%8A%80%E5%B7%A7/"/>
+    
+    <category term="配置" scheme="https://septzhang.link/tags/%E9%85%8D%E7%BD%AE/"/>
+    
+    <category term="通识" scheme="https://septzhang.link/tags/%E9%80%9A%E8%AF%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Springboot的日志解决方案</title>
+    <link href="https://septzhang.link/posts/13699/"/>
+    <id>https://septzhang.link/posts/13699/</id>
+    <published>2021-07-21T01:53:36.000Z</published>
+    <updated>2021-07-21T01:53:36.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="https://septzhang.link/categories/Java/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>SQLite的使用</title>
@@ -377,9 +425,9 @@
     
     <category term="配置" scheme="https://septzhang.link/tags/%E9%85%8D%E7%BD%AE/"/>
     
-    <category term="Spring Boot" scheme="https://septzhang.link/tags/Spring-Boot/"/>
-    
     <category term="Spring Security" scheme="https://septzhang.link/tags/Spring-Security/"/>
+    
+    <category term="Spring Boot" scheme="https://septzhang.link/tags/Spring-Boot/"/>
     
   </entry>
   
@@ -454,64 +502,6 @@
     <category term="配置" scheme="https://septzhang.link/tags/%E9%85%8D%E7%BD%AE/"/>
     
     <category term="Swagger" scheme="https://septzhang.link/tags/Swagger/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>项目热不热</title>
-    <link href="https://septzhang.link/posts/52089/"/>
-    <id>https://septzhang.link/posts/52089/</id>
-    <published>2021-04-23T02:58:45.000Z</published>
-    <updated>2021-04-23T02:58:45.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://view.moezx.cc/images/2018/01/14/03976_theeleventhhour_3840x2160.jpg&quot; alt=&quot;03976_theeleventhhour_3840x2160.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;项目的热部署&lt;/p&gt;
-&lt;p&gt;本文项主要是目的热部署的过程，及配置文件。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="编程" scheme="https://septzhang.link/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    
-    <category term="技巧" scheme="https://septzhang.link/tags/%E6%8A%80%E5%B7%A7/"/>
-    
-    <category term="配置" scheme="https://septzhang.link/tags/%E9%85%8D%E7%BD%AE/"/>
-    
-    <category term="热部署" scheme="https://septzhang.link/tags/%E7%83%AD%E9%83%A8%E7%BD%B2/"/>
-    
-    <category term="SpringBoot" scheme="https://septzhang.link/tags/SpringBoot/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>servlet配置在DAO</title>
-    <link href="https://septzhang.link/posts/52089/"/>
-    <id>https://septzhang.link/posts/52089/</id>
-    <published>2021-04-22T10:16:13.000Z</published>
-    <updated>2021-04-22T10:16:13.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-
-&lt;h1 id=&quot;DAO层&quot;&gt;&lt;a href=&quot;#DAO层&quot; class=&quot;headerlink&quot; title=&quot;DAO层&quot;&gt;&lt;/a&gt;DAO层&lt;/h1&gt;&lt;h1 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="编程" scheme="https://septzhang.link/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    
-    <category term="开发" scheme="https://septzhang.link/tags/%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="配置" scheme="https://septzhang.link/tags/%E9%85%8D%E7%BD%AE/"/>
-    
-    <category term="Spring MVC" scheme="https://septzhang.link/tags/Spring-MVC/"/>
     
   </entry>
   
