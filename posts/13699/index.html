@@ -16,7 +16,7 @@
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="SeptZhang的养猪站">
+  <meta name="description" content="">
   <meta name="author" content="SeptZhang">
   <meta name="keywords" content="Java,Mysql,SpringBoot">
   
@@ -224,7 +224,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      0 字
+      465 字
     </span>
   
 
@@ -234,7 +234,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       俺猜宁得用 
-      1
+      5
        分钟
     </span>
   
@@ -276,12 +276,64 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：2 小时前
+                  本文最后更新于：2 天前
                 
               </p>
             
             <div class="markdown-body">
-              <span id="more"></span>
+              <p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/timg-2.jpg" srcset="/img/loading.gif" lazyload alt="timg-2.jpg"></p>
+<span id="more"></span>
+
+
+
+<h1 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h1><h2 id="日志在开发过程中作用"><a href="#日志在开发过程中作用" class="headerlink" title="日志在开发过程中作用"></a>日志在开发过程中作用</h2><p>在开发过程这种，我们经常要调试和打印一些信息，这样的帮助和我辅助我们进行<strong>问题排查</strong>和<strong>数据跟踪</strong>。</p>
+<p>一般传统的方式是使用</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java">System.out.printltn(<span class="hljs-string">&quot;xxxxx &quot;</span>)<br></code></pre></td></tr></table></figure>
+
+<p>但是上面的这种方式存在如下问题：</p>
+<blockquote>
+<p>1：仅仅只是一种控制台打印的方式。</p>
+<p>2：不方便我后续生产环境的调试和查看。</p>
+<p>3：性能角度，存在一定性能问题。会影响方法的执行速度。虽然影响很小，但是也不应该小觑。</p>
+</blockquote>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>把打印的信息写入文件中。===》日志</p>
+<h1 id="Springboot的日志的解决方案"><a href="#Springboot的日志的解决方案" class="headerlink" title="Springboot的日志的解决方案"></a>Springboot的日志的解决方案</h1><p> 在springboot的底层日志结构中对应：<code>spring-boot-starter-logging</code>可以看出，它依赖了三个框架分别是： </p>
+<p><code>spring-boot-starter-logging</code> 依赖已经被</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.boot<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-boot-starter-web<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="关系体系"><a href="#关系体系" class="headerlink" title="关系体系"></a>关系体系</h2><p>springboot的日志的整个体系:</p>
+<p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/1624279228011.png" srcset="/img/loading.gif" lazyload alt="1624279228011"></p>
+<p> 在<code>springboot</code>的底层日志结构中对应：<code>spring-boot-starter-logging</code>可以看出，它依赖了三个框架分别是： </p>
+<ul>
+<li>slf4j</li>
+<li>logback</li>
+<li>log4j</li>
+</ul>
+<h2 id="slf4j、logback和log4j三者的关系"><a href="#slf4j、logback和log4j三者的关系" class="headerlink" title="slf4j、logback和log4j三者的关系"></a>slf4j、logback和log4j三者的关系</h2><p>1、logback和log4j是日志实现框架，就是实现怎么记录日志的。</p>
+<p>2、slf4j：提供了java所有的日志框架的简单抽象（使用了日志的门面设计模式），</p>
+<p>说白了就是一个日志API（<code>没有实现类</code>）, 它<strong>不能单独使用</strong>。</p>
+<p>必须要结logback和log4j日志框架来实现<strong>结合使用</strong>。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-meta">@RestController</span><br><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LogController</span> </span>&#123;<br>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> Logger log = LoggerFactory.getLogger(LogController.class);<br>    <span class="hljs-meta">@GetMapping(&quot;/log&quot;)</span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">console</span><span class="hljs-params">()</span></span>&#123;<br>        log.trace(<span class="hljs-string">&quot;----------trace--------&quot;</span>);<br>        log.debug(<span class="hljs-string">&quot;----------debug--------&quot;</span>);<br>        log.info(<span class="hljs-string">&quot;----------info--------&quot;</span>);<br>        log.warn(<span class="hljs-string">&quot;----------warn--------&quot;</span>);<br>        log.error(<span class="hljs-string">&quot;----------error--------&quot;</span>);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+
+
+
+
+<p>使用</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">// 初始化一个日志对象</span><br><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Logger log = LoggerFactory.getLogger(IndexController.class);<br></code></pre></td></tr></table></figure>
+
+
+
+<p>打印结果</p>
+<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs properties"><br></code></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
 
 
             </div>
@@ -296,6 +348,17 @@
                     
                   </div>
                 
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E9%80%9A%E8%AF%86/">通识</a>
+                    
+                      <a class="hover-with-bg" href="/tags/Spring-Boot/">Spring Boot</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%97%A5%E5%BF%97/">日志</a>
+                    
+                  </div>
                 
               </div>
               
@@ -312,7 +375,7 @@
                     
                       <a href="/posts/10403/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">‘免费又好用的图床谁不爱呢’</span>
+                        <span class="hidden-mobile">免费又好用的图床谁不爱呢</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     

@@ -4,7 +4,36 @@
   
   
   <entry>
-    <title>‘免费又好用的图床谁不爱呢’</title>
+    <title>Redis在项目中的作用</title>
+    <link href="/posts/30044/"/>
+    <url>/posts/30044/</url>
+    
+    <content type="html"><![CDATA[<p><img src="https://view.lixingyong.com/images/2020/07/15/-----4k_.jpg" alt="-----4k_.jpg"></p><span id="more"></span><h1 id="Redis在项目中的作用"><a href="#Redis在项目中的作用" class="headerlink" title="Redis在项目中的作用"></a>Redis在项目中的作用</h1><h2 id="Redis"><a href="#Redis" class="headerlink" title="Redis"></a>Redis</h2><p><em><strong>Redis是一个高性能的基于Key-value设计的内存数据库</strong></em>，它支持常见的五种数据格式：<strong>String类型、Hash、List列表、Set集合、ZSet有序集合、 bitmaps</strong>， <strong>hyperloglogs 和 地理空间（geospatial） 索引半径查询</strong>等。</p><blockquote><p>Redis 是一个开源（BSD许可）的，内存中的数据结构存储系统，它可以用作数据库、缓存和消息中间件。 它支持多种类型的数据结构，如 <a href="http://www.redis.cn/topics/data-types-intro.html#strings">字符串（strings）</a>， <a href="http://www.redis.cn/topics/data-types-intro.html#hashes">散列（hashes）</a>， <a href="http://www.redis.cn/topics/data-types-intro.html#lists">列表（lists）</a>， <a href="http://www.redis.cn/topics/data-types-intro.html#sets">集合（sets）</a>， <a href="http://www.redis.cn/topics/data-types-intro.html#sorted-sets">有序集合（sorted sets）</a> 与范围查询， <a href="http://www.redis.cn/topics/data-types-intro.html#bitmaps">bitmaps</a>， <a href="http://www.redis.cn/topics/data-types-intro.html#hyperloglogs">hyperloglogs</a> 和 <a href="http://www.redis.cn/commands/geoadd.html">地理空间（geospatial）</a> 索引半径查询。 Redis 内置了 <a href="http://www.redis.cn/topics/replication.html">复制（replication）</a>，<a href="http://www.redis.cn/commands/eval.html">LUA脚本（Lua scripting）</a>， <a href="http://www.redis.cn/topics/lru-cache.html">LRU驱动事件（LRU eviction）</a>，<a href="http://www.redis.cn/topics/transactions.html">事务（transactions）</a> 和不同级别的 <a href="http://www.redis.cn/topics/persistence.html">磁盘持久化（persistence）</a>， 并通过 <a href="http://www.redis.cn/topics/sentinel.html">Redis哨兵（Sentinel）</a>和自动 <a href="http://www.redis.cn/topics/cluster-tutorial.html">分区（Cluster）</a>提供高可用性（high availability）。</p></blockquote><h3 id="Redis无法替换MySQL-Oracle的原因"><a href="#Redis无法替换MySQL-Oracle的原因" class="headerlink" title="Redis无法替换MySQL/Oracle的原因"></a>Redis无法替换MySQL/Oracle的原因</h3><p>一般来说是不可取的，因为把数据放在磁盘中才会更加安全。而使用Redis只是为了缓解压力和特殊的业务场景。所以一般是配合使用。</p><h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><h3 id="性能-数据读取性能强悍"><a href="#性能-数据读取性能强悍" class="headerlink" title="性能-数据读取性能强悍"></a>性能-数据读取性能强悍</h3><p>通常数据库的操作，一般都要几十毫秒，而Redis的读操作一般仅需要不到1毫秒。所以一般在开发中我们会把一些数据存在Redis中，性能会有几十倍到上百倍的提升。</p><h3 id="并发-缓解数据库压力"><a href="#并发-缓解数据库压力" class="headerlink" title="并发-缓解数据库压力"></a>并发-缓解数据库压力</h3><p>在网站的大并发的环境下，所有的请求都直接访问数据库，数据库的链接很容易耗尽。甚至出现数据的卡死或者直接宕机，为了解决数据库的压力一般我们都会采用redis来做数据的缓存。让请求先访问到Redis中，而不会直接冲到数据库去查询。</p><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="http://www.redis.cn/">redis中文官方网站</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Redis</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>开发</tag>
+      
+      <tag>工具</tag>
+      
+      <tag>中间件</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>免费又好用的图床谁不爱呢</title>
     <link href="/posts/10403/"/>
     <url>/posts/10403/</url>
     
@@ -37,7 +66,7 @@
     <link href="/posts/13699/"/>
     <url>/posts/13699/</url>
     
-    <content type="html"><![CDATA[<span id="more"></span>]]></content>
+    <content type="html"><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/timg-2.jpg" alt="timg-2.jpg"></p><span id="more"></span><h1 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h1><h2 id="日志在开发过程中作用"><a href="#日志在开发过程中作用" class="headerlink" title="日志在开发过程中作用"></a>日志在开发过程中作用</h2><p>在开发过程这种，我们经常要调试和打印一些信息，这样的帮助和我辅助我们进行<strong>问题排查</strong>和<strong>数据跟踪</strong>。</p><p>一般传统的方式是使用</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java">System.out.printltn(<span class="hljs-string">&quot;xxxxx &quot;</span>)<br></code></pre></td></tr></table></figure><p>但是上面的这种方式存在如下问题：</p><blockquote><p>1：仅仅只是一种控制台打印的方式。</p><p>2：不方便我后续生产环境的调试和查看。</p><p>3：性能角度，存在一定性能问题。会影响方法的执行速度。虽然影响很小，但是也不应该小觑。</p></blockquote><h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>把打印的信息写入文件中。===》日志</p><h1 id="Springboot的日志的解决方案"><a href="#Springboot的日志的解决方案" class="headerlink" title="Springboot的日志的解决方案"></a>Springboot的日志的解决方案</h1><p> 在springboot的底层日志结构中对应：<code>spring-boot-starter-logging</code>可以看出，它依赖了三个框架分别是： </p><p><code>spring-boot-starter-logging</code> 依赖已经被</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.boot<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-boot-starter-web<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span><br></code></pre></td></tr></table></figure><h2 id="关系体系"><a href="#关系体系" class="headerlink" title="关系体系"></a>关系体系</h2><p>springboot的日志的整个体系:</p><p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/1624279228011.png" alt="1624279228011"></p><p> 在<code>springboot</code>的底层日志结构中对应：<code>spring-boot-starter-logging</code>可以看出，它依赖了三个框架分别是： </p><ul><li>slf4j</li><li>logback</li><li>log4j</li></ul><h2 id="slf4j、logback和log4j三者的关系"><a href="#slf4j、logback和log4j三者的关系" class="headerlink" title="slf4j、logback和log4j三者的关系"></a>slf4j、logback和log4j三者的关系</h2><p>1、logback和log4j是日志实现框架，就是实现怎么记录日志的。</p><p>2、slf4j：提供了java所有的日志框架的简单抽象（使用了日志的门面设计模式），</p><p>说白了就是一个日志API（<code>没有实现类</code>）, 它<strong>不能单独使用</strong>。</p><p>必须要结logback和log4j日志框架来实现<strong>结合使用</strong>。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-meta">@RestController</span><br><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LogController</span> </span>&#123;<br>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> Logger log = LoggerFactory.getLogger(LogController.class);<br>    <span class="hljs-meta">@GetMapping(&quot;/log&quot;)</span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">console</span><span class="hljs-params">()</span></span>&#123;<br>        log.trace(<span class="hljs-string">&quot;----------trace--------&quot;</span>);<br>        log.debug(<span class="hljs-string">&quot;----------debug--------&quot;</span>);<br>        log.info(<span class="hljs-string">&quot;----------info--------&quot;</span>);<br>        log.warn(<span class="hljs-string">&quot;----------warn--------&quot;</span>);<br>        log.error(<span class="hljs-string">&quot;----------error--------&quot;</span>);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure><p>使用</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">// 初始化一个日志对象</span><br><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Logger log = LoggerFactory.getLogger(IndexController.class);<br></code></pre></td></tr></table></figure><p>打印结果</p><figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs properties"><br></code></pre></td></tr></table></figure>]]></content>
     
     
     <categories>
@@ -46,6 +75,16 @@
       
     </categories>
     
+    
+    <tags>
+      
+      <tag>通识</tag>
+      
+      <tag>Spring Boot</tag>
+      
+      <tag>日志</tag>
+      
+    </tags>
     
   </entry>
   
@@ -56,7 +95,7 @@
     <link href="/posts/61119/"/>
     <url>/posts/61119/</url>
     
-    <content type="html"><![CDATA[<span id="more"></span><h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><h2 id="SQLite-简介"><a href="#SQLite-简介" class="headerlink" title="SQLite 简介"></a>SQLite 简介</h2><p>SQLite是一个软件库，实现了自给自足的、无服务器的、零配置的、事务性的 SQL 数据库引擎。SQLite是一个增长最快的数据库引擎，这是在普及方面的增长，与它的尺寸大小无关。<strong>SQLite 源代码不受版权限制</strong>。</p><h2 id="什么是-SQLite？"><a href="#什么是-SQLite？" class="headerlink" title="什么是 SQLite？"></a>什么是 SQLite？</h2><p>SQLite是一个<strong>进程内的库</strong>，实现了自给自足的、无服务器的、零配置的、事务性的 SQL 数据库引擎。它是一个<strong>零配置</strong>的数据库，这意味着与其他数据库不一样，您<strong>不需要在系统中配置</strong>。</p><p>就像其他数据库，SQLite 引擎不是一个独立的进程，可以按应用程序需求进行静态或动态连接。SQLite 直接访问其存储文件。</p><h2 id="为什么要用-SQLite？"><a href="#为什么要用-SQLite？" class="headerlink" title="为什么要用 SQLite？"></a>为什么要用 SQLite？</h2><ul><li>不需要一个单独的服务器进程或操作的系统（<strong>无服务器的</strong>）。</li><li>SQLite <strong>不需要配置</strong>，这意味着不需要安装或管理。</li><li>一个完整的 SQLite 数据库是存储在一个单一的<strong>跨平台</strong>的磁盘文件。</li><li>SQLite 是非常小的，是<strong>轻量级</strong>的，完全配置时小于 400KiB，省略可选功能配置时小于250KiB。</li><li>SQLite 是<strong>自给自足</strong>的，这意味着不需要任何外部的依赖。</li><li>SQLite 事务是完全兼容 ACID 的，允许从<strong>多个进程或线程安全访问</strong>。</li><li>SQLite 支持 <strong>SQL92（SQL2）标准</strong>的大多数查询语言的功能。</li><li>SQLite 使用 <strong>ANSI-C 编写</strong>的，并提供了简单和易于使用的 API。</li><li>SQLite 可在 UNIX（Linux, Mac OS-X, Android, iOS）和 Windows（Win32, WinCE, WinRT）中运行。</li></ul><h2 id="SQLite-局限性"><a href="#SQLite-局限性" class="headerlink" title="SQLite 局限性"></a>SQLite 局限性</h2><table><thead><tr><th align="center"><strong>特性</strong></th><th align="center"><strong>描述</strong></th></tr></thead><tbody><tr><td align="center">RIGHT OUTER JOIN</td><td align="center">只实现了 LEFT OUTER JOIN。</td></tr><tr><td align="center">FULL OUTER JOIN</td><td align="center">只实现了 LEFT OUTER JOIN。</td></tr><tr><td align="center">ALTER TABLE</td><td align="center">支持 RENAME TABLE 和 ALTER TABLE 的 ADD COLUMN variants 命令，不支持 DROP COLUMN、ALTER COLUMN、ADD CONSTRAINT。</td></tr><tr><td align="center">Trigger 支持</td><td align="center">支持 FOR EACH ROW 触发器，但不支持 FOR EACH STATEMENT 触发器。</td></tr><tr><td align="center">VIEWs</td><td align="center">在 SQLite 中，视图是只读的。您不可以在视图上执行 DELETE、INSERT 或 UPDATE 语句。</td></tr><tr><td align="center">GRANT 和 REVOKE</td><td align="center">可以应用的唯一的访问权限是底层操作系统的正常文件访问权限。</td></tr></tbody></table><h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>参考：<a href="https://www.runoob.com/sqlite/sqlite-installation.html">SQLite 安装 | 菜鸟教程 (runoob.com)</a></p><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://www.runoob.com/sqlite/sqlite-tutorial.html">SQLite 教程 | 菜鸟教程 (runoob.com)</a></p>]]></content>
+    <content type="html"><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/----4k_.jpg" alt="----4k_.jpg"></p><span id="more"></span><h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><h2 id="SQLite-简介"><a href="#SQLite-简介" class="headerlink" title="SQLite 简介"></a>SQLite 简介</h2><p>SQLite是一个软件库，实现了自给自足的、无服务器的、零配置的、事务性的 SQL 数据库引擎。SQLite是一个增长最快的数据库引擎，这是在普及方面的增长，与它的尺寸大小无关。<strong>SQLite 源代码不受版权限制</strong>。</p><h2 id="什么是-SQLite？"><a href="#什么是-SQLite？" class="headerlink" title="什么是 SQLite？"></a>什么是 SQLite？</h2><p>SQLite是一个<strong>进程内的库</strong>，实现了自给自足的、无服务器的、零配置的、事务性的 SQL 数据库引擎。它是一个<strong>零配置</strong>的数据库，这意味着与其他数据库不一样，您<strong>不需要在系统中配置</strong>。</p><p>就像其他数据库，SQLite 引擎不是一个独立的进程，可以按应用程序需求进行静态或动态连接。SQLite 直接访问其存储文件。</p><h2 id="为什么要用-SQLite？"><a href="#为什么要用-SQLite？" class="headerlink" title="为什么要用 SQLite？"></a>为什么要用 SQLite？</h2><ul><li>不需要一个单独的服务器进程或操作的系统（<strong>无服务器的</strong>）。</li><li>SQLite <strong>不需要配置</strong>，这意味着不需要安装或管理。</li><li>一个完整的 SQLite 数据库是存储在一个单一的<strong>跨平台</strong>的磁盘文件。</li><li>SQLite 是非常小的，是<strong>轻量级</strong>的，完全配置时小于 400KiB，省略可选功能配置时小于250KiB。</li><li>SQLite 是<strong>自给自足</strong>的，这意味着不需要任何外部的依赖。</li><li>SQLite 事务是完全兼容 ACID 的，允许从<strong>多个进程或线程安全访问</strong>。</li><li>SQLite 支持 <strong>SQL92（SQL2）标准</strong>的大多数查询语言的功能。</li><li>SQLite 使用 <strong>ANSI-C 编写</strong>的，并提供了简单和易于使用的 API。</li><li>SQLite 可在 UNIX（Linux, Mac OS-X, Android, iOS）和 Windows（Win32, WinCE, WinRT）中运行。</li></ul><h2 id="SQLite-局限性"><a href="#SQLite-局限性" class="headerlink" title="SQLite 局限性"></a>SQLite 局限性</h2><table><thead><tr><th align="center"><strong>特性</strong></th><th align="center"><strong>描述</strong></th></tr></thead><tbody><tr><td align="center">RIGHT OUTER JOIN</td><td align="center">只实现了 LEFT OUTER JOIN。</td></tr><tr><td align="center">FULL OUTER JOIN</td><td align="center">只实现了 LEFT OUTER JOIN。</td></tr><tr><td align="center">ALTER TABLE</td><td align="center">支持 RENAME TABLE 和 ALTER TABLE 的 ADD COLUMN variants 命令，不支持 DROP COLUMN、ALTER COLUMN、ADD CONSTRAINT。</td></tr><tr><td align="center">Trigger 支持</td><td align="center">支持 FOR EACH ROW 触发器，但不支持 FOR EACH STATEMENT 触发器。</td></tr><tr><td align="center">VIEWs</td><td align="center">在 SQLite 中，视图是只读的。您不可以在视图上执行 DELETE、INSERT 或 UPDATE 语句。</td></tr><tr><td align="center">GRANT 和 REVOKE</td><td align="center">可以应用的唯一的访问权限是底层操作系统的正常文件访问权限。</td></tr></tbody></table><h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>参考：<a href="https://www.runoob.com/sqlite/sqlite-installation.html">SQLite 安装 | 菜鸟教程 (runoob.com)</a></p><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://www.runoob.com/sqlite/sqlite-tutorial.html">SQLite 教程 | 菜鸟教程 (runoob.com)</a></p>]]></content>
     
     
     <categories>
@@ -450,9 +489,9 @@
       
       <tag>配置</tag>
       
-      <tag>Spring Security</tag>
-      
       <tag>Spring Boot</tag>
+      
+      <tag>Spring Security</tag>
       
     </tags>
     
