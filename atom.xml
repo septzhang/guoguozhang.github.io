@@ -6,7 +6,7 @@
   <link href="https://septzhang.link/atom.xml" rel="self"/>
   
   <link href="https://septzhang.link/"/>
-  <updated>2021-07-22T12:43:42.000Z</updated>
+  <updated>2021-08-07T06:41:45.000Z</updated>
   <id>https://septzhang.link/</id>
   
   <author>
@@ -15,6 +15,70 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>5W1H分析法</title>
+    <link href="https://septzhang.link/posts/54494/"/>
+    <id>https://septzhang.link/posts/54494/</id>
+    <published>2021-08-07T06:41:45.000Z</published>
+    <updated>2021-08-07T06:41:45.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;problem well stated is a problem half solved.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Java" scheme="https://septzhang.link/categories/Java/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>算法练习01</title>
+    <link href="https://septzhang.link/posts/28081/"/>
+    <id>https://septzhang.link/posts/28081/</id>
+    <published>2021-07-31T15:58:42.000Z</published>
+    <updated>2021-07-31T15:58:42.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/10576d3617802dc045024d5edd7ea90d.jpg&quot; alt=&quot;10576d3617802dc045024d5edd7ea90d.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;二分查找的相关算法题目。。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Java" scheme="https://septzhang.link/categories/Java/"/>
+    
+    
+    <category term="面试" scheme="https://septzhang.link/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+    <category term="算法" scheme="https://septzhang.link/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux开发记录</title>
+    <link href="https://septzhang.link/posts/17798/"/>
+    <id>https://septzhang.link/posts/17798/</id>
+    <published>2021-07-31T14:35:04.000Z</published>
+    <updated>2021-07-31T14:35:04.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+
+&lt;h1 id=&quot;Linux开发记录&quot;&gt;&lt;a href=&quot;#Linux开发记录&quot; class=&quot;headerlink&quot; title=&quot;Linux开发记录&quot;&gt;&lt;/a&gt;Linux开发记录&lt;/h1&gt;&lt;p&gt;环境： centos</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="https://septzhang.link/categories/Java/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Redis在项目中的作用</title>
@@ -79,9 +143,9 @@
     <category term="Java" scheme="https://septzhang.link/categories/Java/"/>
     
     
-    <category term="通识" scheme="https://septzhang.link/tags/%E9%80%9A%E8%AF%86/"/>
-    
     <category term="Spring Boot" scheme="https://septzhang.link/tags/Spring-Boot/"/>
+    
+    <category term="通识" scheme="https://septzhang.link/tags/%E9%80%9A%E8%AF%86/"/>
     
     <category term="日志" scheme="https://septzhang.link/tags/%E6%97%A5%E5%BF%97/"/>
     
@@ -417,80 +481,6 @@
     <category term="奇怪的知识" scheme="https://septzhang.link/tags/%E5%A5%87%E6%80%AA%E7%9A%84%E7%9F%A5%E8%AF%86/"/>
     
     <category term="前端" scheme="https://septzhang.link/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Spring Security 帮你快速权限划分</title>
-    <link href="https://septzhang.link/posts/52086/"/>
-    <id>https://septzhang.link/posts/52086/</id>
-    <published>2021-04-27T03:43:26.000Z</published>
-    <updated>2021-04-27T03:43:26.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://view.moezx.cc/images/2017/12/18/tumblr_p127vqRqt91szfkqdo1_1280.png&quot; alt=&quot;tumblr_p127vqRqt91szfkqdo1_1280.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;整理了Spring Security的使用和配置，方便以后开发使用o(￣▽￣)ｄ&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="编程" scheme="https://septzhang.link/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    
-    <category term="开发" scheme="https://septzhang.link/tags/%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="配置" scheme="https://septzhang.link/tags/%E9%85%8D%E7%BD%AE/"/>
-    
-    <category term="Spring Boot" scheme="https://septzhang.link/tags/Spring-Boot/"/>
-    
-    <category term="Spring Security" scheme="https://septzhang.link/tags/Spring-Security/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>可恶嗷，口又被占用了</title>
-    <link href="https://septzhang.link/posts/52087/"/>
-    <id>https://septzhang.link/posts/52087/</id>
-    <published>2021-04-24T10:16:12.000Z</published>
-    <updated>2021-04-24T10:16:12.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://view.moezx.cc/images/2017/12/02/DEEMOShatteredMemoriesPID55501293bysishenfan.jpg&quot; alt=&quot;DEEMOShatteredMemoriesPID55501293bysishenfan.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;可恶嗷，又有端口被占用了，看我的大宝贝吧 ( ‵▽′)ψ&lt;/p&gt;
-&lt;p&gt;就两步解决。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="通识" scheme="https://septzhang.link/categories/%E9%80%9A%E8%AF%86/"/>
-    
-    
-    <category term="技巧" scheme="https://septzhang.link/tags/%E6%8A%80%E5%B7%A7/"/>
-    
-    <category term="windows" scheme="https://septzhang.link/tags/windows/"/>
-    
-    <category term="dos" scheme="https://septzhang.link/tags/dos/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>为啥要用tomcat</title>
-    <link href="https://septzhang.link/posts/52088/"/>
-    <id>https://septzhang.link/posts/52088/</id>
-    <published>2021-04-24T10:01:05.000Z</published>
-    <updated>2021-04-24T10:01:05.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://view.moezx.cc/images/2017/12/02/withthefairiesPID65578040bykieed.jpg&quot; alt=&quot;withthefairiesPID65578040bykieed.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;以前作为一个应用型学习人才，我一直再用tomcat，却忘记了为啥要用 ٩(๑òωó๑)۶&lt;/p&gt;
-&lt;p&gt;于是就水一篇博客记一记吧 (*╯3╰)&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="编程" scheme="https://septzhang.link/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    
-    <category term="基础知识" scheme="https://septzhang.link/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    
-    <category term="tomcat" scheme="https://septzhang.link/tags/tomcat/"/>
     
   </entry>
   
