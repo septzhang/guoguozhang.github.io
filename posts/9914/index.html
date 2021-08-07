@@ -32,7 +32,7 @@
     
     
       
-      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/rainbow.min.css" />
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/pojoaque.min.css" />
     
   
 
@@ -379,7 +379,7 @@
 <h2 id="Qualifier"><a href="#Qualifier" class="headerlink" title="@Qualifier"></a>@Qualifier</h2><p>用于标注哪一个实现类才是需要注入的。</p>
 <p>@Qualifier的参数名称为被注入的类中的注解@Service标注的名称。</p>
 <p>@Qualifier和@Autowired一起使用：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-meta">@Autowired</span><br><span class="hljs-meta">@Qualifier(&quot;articleService&quot;)</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs java"><span class="hljs-meta">@Autowired</span><br><span class="hljs-meta">@Qualifier(&quot;articleService&quot;)</span><br></code></pre></div></td></tr></table></figure>
 
 <h3 id="Resource和-Qualifier的不同"><a href="#Resource和-Qualifier的不同" class="headerlink" title="@Resource和@Qualifier的不同"></a>@Resource和@Qualifier的不同</h3><p>@Resource自带name属性。</p>
 <h1 id="方法名上的注解"><a href="#方法名上的注解" class="headerlink" title="方法名上的注解"></a>方法名上的注解</h1><p>明天再写</p>

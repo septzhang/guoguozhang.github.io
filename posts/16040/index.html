@@ -32,7 +32,7 @@
     
     
       
-      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/rainbow.min.css" />
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/pojoaque.min.css" />
     
   
 
@@ -287,8 +287,8 @@
 <p><strong>加载</strong>是将类的class文件读入到内存，并为之创建一个java.lang.Class对象。</p>
 <p><img src="https://picuploader8997.oss-cn-beijing.aliyuncs.com/img/20210314152741.png" srcset="/img/loading.gif" lazyload></p>
 <h2 id="加载器的类型"><a href="#加载器的类型" class="headerlink" title="加载器的类型"></a>加载器的类型</h2><h3 id="启动类加载器BootstrapClassLoader"><a href="#启动类加载器BootstrapClassLoader" class="headerlink" title="启动类加载器BootstrapClassLoader:"></a>启动类加载器BootstrapClassLoader:</h3><p>​    是嵌在JVM内核中的加载器，该加载器是用C++语言写的，主要负载加载JAVA_HOME/lib下的类库，启动类加载器无法被应用程序直接使用。</p>
-<h3 id="扩展类加载器Extension-ClassLoader："><a href="#扩展类加载器Extension-ClassLoader：" class="headerlink" title="扩展类加载器Extension ClassLoader："></a>扩展类加载器Extension ClassLoader：</h3><pre><code> 该加载器器是用JAVA编写，且它的父类加载器是Bootstrap，是由sun.misc.Launcher$ExtClassLoader实现的，主要加载JAVA_HOME/lib/ext目录中的类库。开发者可以这几使用扩展类加载器。
-</code></pre>
+<h3 id="扩展类加载器Extension-ClassLoader："><a href="#扩展类加载器Extension-ClassLoader：" class="headerlink" title="扩展类加载器Extension ClassLoader："></a>扩展类加载器Extension ClassLoader：</h3><div class="hljs code-wrapper"><pre><code> 该加载器器是用JAVA编写，且它的父类加载器是Bootstrap，是由sun.misc.Launcher$ExtClassLoader实现的，主要加载JAVA_HOME/lib/ext目录中的类库。开发者可以这几使用扩展类加载器。
+</code></pre></div>
 <h3 id="系统类加载器App-ClassLoader："><a href="#系统类加载器App-ClassLoader：" class="headerlink" title="系统类加载器App ClassLoader："></a>系统类加载器App ClassLoader：</h3><p>系统类加载器，也称为应用程序类加载器，负责加载应用程序classpath目录下的所有jar和class文件。它的父加载器为Ext ClassLoader。</p>
 <p><img src="https://picuploader8997.oss-cn-beijing.aliyuncs.com/img/20210315213224.png" srcset="/img/loading.gif" lazyload alt="三种类加载器的层次关系"></p>
 <h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><p>类加载器的体系并不是“继承”体系，而是<strong>委派体系</strong>，大多数类加载器首先会到自己的parent中查找类或者资源，如果找不到才会到自己本地查找。类加载器的委托行为动机是为了<strong>避免相同的类被加载多次</strong>。</p>

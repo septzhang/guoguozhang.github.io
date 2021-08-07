@@ -34,7 +34,7 @@
     
     
       
-      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/rainbow.min.css" />
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/pojoaque.min.css" />
     
   
 
@@ -292,7 +292,7 @@
 <p>​        因为tomcat本身是一个<strong>web 服务器</strong>，所以我们可以把html文件部署在这个web服务器上，所以就可以通过ip访问了。</p>
 <h1 id="修改tomcat端口号"><a href="#修改tomcat端口号" class="headerlink" title="修改tomcat端口号"></a>修改tomcat端口号</h1><h2 id="修改server-xml"><a href="#修改server-xml" class="headerlink" title="修改server.xml"></a>修改server.xml</h2><p>tomcat的端口配置相关信息在 server.xml中。</p>
 <p>用记事本打开 <code>*\tomcat\conf\server.xml</code>，找到以下代码：</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">Connector</span> <span class="hljs-attr">port</span>=<span class="hljs-string">&quot;8080&quot;</span> <span class="hljs-attr">protocol</span>=<span class="hljs-string">&quot;HTTP/1.1&quot;</span>   &gt;</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">Connector</span> <span class="hljs-attr">port</span>=<span class="hljs-string">&quot;8080&quot;</span> <span class="hljs-attr">protocol</span>=<span class="hljs-string">&quot;HTTP/1.1&quot;</span>   &gt;</span><br></code></pre></div></td></tr></table></figure>
 
 <p>修改即可</p>
 <h2 id="重启tomcat"><a href="#重启tomcat" class="headerlink" title="重启tomcat"></a>重启tomcat</h2><h1 id="tomcat常见错误"><a href="#tomcat常见错误" class="headerlink" title="tomcat常见错误"></a>tomcat常见错误</h1><p>我参考的文档已经很全了，就只贴一个链接]吧</p>
