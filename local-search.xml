@@ -62,15 +62,23 @@
     <link href="/posts/17798/"/>
     <url>/posts/17798/</url>
     
-    <content type="html"><![CDATA[<span id="more"></span><h1 id="Linux开发记录"><a href="#Linux开发记录" class="headerlink" title="Linux开发记录"></a>Linux开发记录</h1><p>环境： centos 7</p><h2 id="安装wget"><a href="#安装wget" class="headerlink" title="安装wget"></a>安装wget</h2><p>指令: <code>yum install wget</code></p><p>一直yes</p><p>成功信息：</p><p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/image-20210731223824191.png" alt="image-20210731223824191"></p><h2 id="安装Redis"><a href="#安装Redis" class="headerlink" title="安装Redis"></a>安装Redis</h2><h3 id="使用wget下载："><a href="#使用wget下载：" class="headerlink" title="使用wget下载："></a>使用wget下载：</h3><p>指令：</p><figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs properties"><span class="hljs-attr">wget</span> <span class="hljs-string">http://download.redis.io/releases/redis-5.0.9.tar.gz</span><br></code></pre></td></tr></table></figure><h3 id="解压安装"><a href="#解压安装" class="headerlink" title="解压安装"></a>解压安装</h3><figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs properties"><span class="hljs-attr">tar</span> <span class="hljs-string">xzf redis-5.0.9.tar.gz</span><br><span class="hljs-attr">cd</span> <span class="hljs-string">redis-5.0.9</span><br><span class="hljs-attr">make</span><br></code></pre></td></tr></table></figure><h3 id=""><a href="#" class="headerlink" title=""></a></h3>]]></content>
+    <content type="html"><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/wallhaven-j5l5qm.jpg" alt="wallhaven-j5l5qm.jpg"></p><span id="more"></span><h1 id="Linux开发记录"><a href="#Linux开发记录" class="headerlink" title="Linux开发记录"></a>Linux开发记录</h1><p>环境： centos 7</p><h2 id="安装wget"><a href="#安装wget" class="headerlink" title="安装wget"></a>安装wget</h2><p>指令: <code>yum install wget</code></p><p>一直yes</p><p>成功信息：</p><p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/image-20210731223824191.png" alt="image-20210731223824191"></p><h2 id="安装Redis"><a href="#安装Redis" class="headerlink" title="安装Redis"></a>安装Redis</h2><h3 id="使用wget下载："><a href="#使用wget下载：" class="headerlink" title="使用wget下载："></a>使用wget下载：</h3><p>指令：</p><figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs properties"><span class="hljs-attr">wget</span> <span class="hljs-string">http://download.redis.io/releases/redis-5.0.9.tar.gz</span><br></code></pre></td></tr></table></figure><h3 id="解压安装"><a href="#解压安装" class="headerlink" title="解压安装"></a>解压安装</h3><figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs properties"><span class="hljs-attr">tar</span> <span class="hljs-string">xzf redis-5.0.9.tar.gz</span><br><span class="hljs-attr">cd</span> <span class="hljs-string">redis-5.0.9</span><br><span class="hljs-attr">make</span><br></code></pre></td></tr></table></figure><h3 id=""><a href="#" class="headerlink" title=""></a></h3>]]></content>
     
     
     <categories>
       
-      <category>Java</category>
+      <category>Linux</category>
       
     </categories>
     
+    
+    <tags>
+      
+      <tag>配置</tag>
+      
+      <tag>开发</tag>
+      
+    </tags>
     
   </entry>
   
@@ -180,9 +188,9 @@
     
     <tags>
       
-      <tag>SQLite</tag>
-      
       <tag>配置</tag>
+      
+      <tag>SQLite</tag>
       
     </tags>
     
@@ -278,9 +286,9 @@
     
     <tags>
       
-      <tag>开发</tag>
-      
       <tag>配置</tag>
+      
+      <tag>开发</tag>
       
       <tag>Spring Boot</tag>
       
@@ -386,9 +394,9 @@
     
     <tags>
       
-      <tag>开发</tag>
-      
       <tag>配置</tag>
+      
+      <tag>开发</tag>
       
       <tag>JavaWeb</tag>
       
@@ -417,9 +425,9 @@
     
     <tags>
       
-      <tag>Maven</tag>
-      
       <tag>技巧</tag>
+      
+      <tag>Maven</tag>
       
       <tag>配置</tag>
       
@@ -446,9 +454,9 @@
     
     <tags>
       
-      <tag>开发</tag>
-      
       <tag>配置</tag>
+      
+      <tag>开发</tag>
       
       <tag>微信小程序</tag>
       
@@ -558,9 +566,9 @@
     
     <tags>
       
-      <tag>开发</tag>
-      
       <tag>配置</tag>
+      
+      <tag>开发</tag>
       
       <tag>Spring Boot</tag>
       
@@ -645,9 +653,9 @@
     
     <tags>
       
-      <tag>开发</tag>
-      
       <tag>配置</tag>
+      
+      <tag>开发</tag>
       
       <tag>Swagger</tag>
       
@@ -705,9 +713,9 @@
     
     <tags>
       
-      <tag>开发</tag>
-      
       <tag>配置</tag>
+      
+      <tag>开发</tag>
       
       <tag>Spring MVC</tag>
       
@@ -875,9 +883,9 @@
     
     <tags>
       
-      <tag>Maven</tag>
-      
       <tag>技巧</tag>
+      
+      <tag>Maven</tag>
       
       <tag>开发</tag>
       
