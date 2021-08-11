@@ -6,7 +6,7 @@
   <link href="https://septzhang.link/atom.xml" rel="self"/>
   
   <link href="https://septzhang.link/"/>
-  <updated>2021-08-07T06:41:45.000Z</updated>
+  <updated>2021-08-11T14:52:19.000Z</updated>
   <id>https://septzhang.link/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>为什么重写equals()同时也要重写hashcode()?</title>
+    <link href="https://septzhang.link/posts/15735/"/>
+    <id>https://septzhang.link/posts/15735/</id>
+    <published>2021-08-11T14:52:19.000Z</published>
+    <updated>2021-08-11T14:52:19.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/hd.jpg&quot; alt=&quot;hd.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Hashcode和equals的知识点。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Java" scheme="https://septzhang.link/categories/Java/"/>
+    
+    
+    <category term="面试" scheme="https://septzhang.link/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+    <category term="Java基础" scheme="https://septzhang.link/tags/Java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
   
   <entry>
     <title>5W1H分析法</title>
@@ -458,30 +480,6 @@
     <category term="编程" scheme="https://septzhang.link/tags/%E7%BC%96%E7%A8%8B/"/>
     
     <category term="技巧" scheme="https://septzhang.link/tags/%E6%8A%80%E5%B7%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>奇怪的知识|B站超速播放</title>
-    <link href="https://septzhang.link/posts/52084/"/>
-    <id>https://septzhang.link/posts/52084/</id>
-    <published>2021-05-05T09:39:42.000Z</published>
-    <updated>2021-05-05T09:39:42.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://view.moezx.cc/images/2018/05/05/20170306_blue_sunrise_007_2560_by_macrebisz-db1bzsp.jpg&quot; alt=&quot;20170306_blue_sunrise_007_2560_by_macrebisz-db1bzsp.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;给大家分享一个任意速度看哔哩哔哩视频的方法。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="通识" scheme="https://septzhang.link/categories/%E9%80%9A%E8%AF%86/"/>
-    
-    
-    <category term="技巧" scheme="https://septzhang.link/tags/%E6%8A%80%E5%B7%A7/"/>
-    
-    <category term="奇怪的知识" scheme="https://septzhang.link/tags/%E5%A5%87%E6%80%AA%E7%9A%84%E7%9F%A5%E8%AF%86/"/>
-    
-    <category term="前端" scheme="https://septzhang.link/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
