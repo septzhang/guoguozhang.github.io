@@ -6,7 +6,7 @@
   <link href="https://septzhang.link/atom.xml" rel="self"/>
   
   <link href="https://septzhang.link/"/>
-  <updated>2021-08-11T14:52:19.000Z</updated>
+  <updated>2021-08-22T10:09:39.000Z</updated>
   <id>https://septzhang.link/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SDK报错</title>
+    <link href="https://septzhang.link/posts/32708/"/>
+    <id>https://septzhang.link/posts/32708/</id>
+    <published>2021-08-22T10:09:39.000Z</published>
+    <updated>2021-08-22T10:09:39.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/2b46eee2f7e9c759b051caa1a3ac1cc9.jpg&quot; alt=&quot;2b46eee2f7e9c759b051caa1a3ac1cc9.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;项目缺少SDK无法运行。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Java" scheme="https://septzhang.link/categories/Java/"/>
+    
+    
+    <category term="配置" scheme="https://septzhang.link/tags/%E9%85%8D%E7%BD%AE/"/>
+    
+    <category term="开发" scheme="https://septzhang.link/tags/%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Android" scheme="https://septzhang.link/tags/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>解决Gradle报错</title>
+    <link href="https://septzhang.link/posts/62754/"/>
+    <id>https://septzhang.link/posts/62754/</id>
+    <published>2021-08-22T09:26:42.000Z</published>
+    <updated>2021-08-22T09:26:42.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/e5dfa0034e9b4c54df2fafe6a3e40c89.jpg&quot; alt=&quot;e5dfa0034e9b4c54df2fafe6a3e40c89.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;解决Gradle报错：Caused by: org.gradle.api.internal.plugins.PluginApplicationException: Failed to apply plugin ‘com.android.internal.application’.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Java" scheme="https://septzhang.link/categories/Java/"/>
+    
+    
+    <category term="配置" scheme="https://septzhang.link/tags/%E9%85%8D%E7%BD%AE/"/>
+    
+    <category term="开发" scheme="https://septzhang.link/tags/%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Android" scheme="https://septzhang.link/tags/Android/"/>
+    
+  </entry>
   
   <entry>
     <title>为什么重写equals()同时也要重写hashcode()?</title>
@@ -436,50 +484,6 @@
     <category term="开发" scheme="https://septzhang.link/tags/%E5%BC%80%E5%8F%91/"/>
     
     <category term="微信小程序" scheme="https://septzhang.link/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Maven报错，surefire插件找不到了</title>
-    <link href="https://septzhang.link/posts/52081/"/>
-    <id>https://septzhang.link/posts/52081/</id>
-    <published>2021-05-20T07:08:28.000Z</published>
-    <updated>2021-05-20T07:08:28.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://view.moezx.cc/images/2017/11/24/fatalitePID61597814by212a.jpg&quot; alt=&quot;fatalitePID61597814by212a.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;项目报错，解决后，记录一下o_O&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Java" scheme="https://septzhang.link/categories/Java/"/>
-    
-    
-    <category term="Maven" scheme="https://septzhang.link/tags/Maven/"/>
-    
-    <category term="错误日志" scheme="https://septzhang.link/tags/%E9%94%99%E8%AF%AF%E6%97%A5%E5%BF%97/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java远程办公-妈妈再也不用担心我不带电脑没法秃头了</title>
-    <link href="https://septzhang.link/posts/52099/"/>
-    <id>https://septzhang.link/posts/52099/</id>
-    <published>2021-05-10T12:04:18.000Z</published>
-    <updated>2021-05-10T12:04:18.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://view.moezx.cc/images/2018/05/13/Paper-Planes-Adventure43844149_by_hk.jpg&quot; alt=&quot;Paper-Planes-Adventure43844149_by_hk.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;将借助github上的开源项目–&lt;code&gt;code-server&lt;/code&gt; ,完成Java代码的web端Coding工作，但是现在仅限编程的初级阶段，高级阶段我还没有完成配置。(*╯3╰)&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="奇怪的知识" scheme="https://septzhang.link/categories/%E5%A5%87%E6%80%AA%E7%9A%84%E7%9F%A5%E8%AF%86/"/>
-    
-    
-    <category term="编程" scheme="https://septzhang.link/tags/%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="技巧" scheme="https://septzhang.link/tags/%E6%8A%80%E5%B7%A7/"/>
     
   </entry>
   

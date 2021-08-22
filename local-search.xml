@@ -4,6 +4,64 @@
   
   
   <entry>
+    <title>SDK报错</title>
+    <link href="/posts/32708/"/>
+    <url>/posts/32708/</url>
+    
+    <content type="html"><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/2b46eee2f7e9c759b051caa1a3ac1cc9.jpg" alt="2b46eee2f7e9c759b051caa1a3ac1cc9.jpg"></p><p>项目缺少SDK无法运行。</p><span id="more"></span><h2 id="报错信息"><a href="#报错信息" class="headerlink" title="报错信息"></a>报错信息</h2><figure class="highlight properties"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs properties"><span class="hljs-attr">Error</span>: <span class="hljs-string">Please select Android SDK</span><br></code></pre></div></td></tr></table></figure><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><h3 id="打开Project-Structure"><a href="#打开Project-Structure" class="headerlink" title="打开Project Structure"></a>打开<code>Project Structure</code></h3><p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/image-20210822181231611.png" alt="image-20210822181231611"></p><h3 id="下载SDK"><a href="#下载SDK" class="headerlink" title="下载SDK"></a>下载SDK</h3><p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/image-20210822181529832.png" alt="image-20210822181529832"></p><h3 id="下载完毕，选择Devices-运行。"><a href="#下载完毕，选择Devices-运行。" class="headerlink" title="下载完毕，选择Devices,运行。"></a>下载完毕，选择<code>Devices</code>,运行。</h3><p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/image-20210822181726915.png" alt="image-20210822181726915"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>配置</tag>
+      
+      <tag>开发</tag>
+      
+      <tag>Android</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>解决Gradle报错</title>
+    <link href="/posts/62754/"/>
+    <url>/posts/62754/</url>
+    
+    <content type="html"><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/e5dfa0034e9b4c54df2fafe6a3e40c89.jpg" alt="e5dfa0034e9b4c54df2fafe6a3e40c89.jpg"></p><p>解决Gradle报错：Caused by: org.gradle.api.internal.plugins.PluginApplicationException: Failed to apply plugin ‘com.android.internal.application’.</p><span id="more"></span><h2 id="控制台报错信息："><a href="#控制台报错信息：" class="headerlink" title="控制台报错信息："></a>控制台报错信息：</h2><figure class="highlight properties"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs properties"><span class="hljs-attr">Caused</span> <span class="hljs-string">by: org.gradle.api.internal.plugins.PluginApplicationException: Failed to apply plugin &#x27;com.android.internal.application&#x27;.</span><br><br></code></pre></div></td></tr></table></figure><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>在gradle.properties添加：</p><figure class="highlight properties"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs properties"><span class="hljs-meta">android.overridePathCheck</span>=<span class="hljs-string">true</span><br></code></pre></div></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/image-20210822172953236.png" alt="image-20210822172953236"></p><p>刷新Gradle ，点击 <code>Sync Project with Gradle Files</code>,等待刷新完成。</p><p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/image-20210822173032559.png" alt="image-20210822173032559"></p><p>完成控制台截图。</p><p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/image-20210822173327640.png" alt="image-20210822173327640"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>配置</tag>
+      
+      <tag>开发</tag>
+      
+      <tag>Android</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>为什么重写equals()同时也要重写hashcode()?</title>
     <link href="/posts/15735/"/>
     <url>/posts/15735/</url>
