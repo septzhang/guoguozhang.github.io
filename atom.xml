@@ -6,7 +6,7 @@
   <link href="https://septzhang.link/atom.xml" rel="self"/>
   
   <link href="https://septzhang.link/"/>
-  <updated>2021-08-22T10:09:39.000Z</updated>
+  <updated>2021-08-30T13:47:22.000Z</updated>
   <id>https://septzhang.link/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>统一接口返回的标准格式-R</title>
+    <link href="https://septzhang.link/posts/59584/"/>
+    <id>https://septzhang.link/posts/59584/</id>
+    <published>2021-08-30T13:47:22.000Z</published>
+    <updated>2021-08-30T13:47:22.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/eac97a5aa0935e8d9e991ba03765124d.jpg&quot; alt=&quot;这秋千真白&quot;&gt;&lt;/p&gt;
+&lt;p&gt;统一接口返回的标准格式R的规范使用。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Java" scheme="https://septzhang.link/categories/Java/"/>
+    
+    
+    <category term="开发" scheme="https://septzhang.link/tags/%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="SpringBoot" scheme="https://septzhang.link/tags/SpringBoot/"/>
+    
+    <category term="规范" scheme="https://septzhang.link/tags/%E8%A7%84%E8%8C%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SpringBoot中的异步处理框架@Async</title>
+    <link href="https://septzhang.link/posts/22207/"/>
+    <id>https://septzhang.link/posts/22207/</id>
+    <published>2021-08-30T13:09:20.000Z</published>
+    <updated>2021-08-30T13:09:20.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;异步处理框架@Async在SpringBoot中的使用&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.lixingyong.com/2020/07/16/84da49720d4fb21d1113bcfa84b1a150.jpg&quot; alt=&quot;雪女&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Java" scheme="https://septzhang.link/categories/Java/"/>
+    
+    
+    <category term="SpringBoot" scheme="https://septzhang.link/tags/SpringBoot/"/>
+    
+    <category term="多线程" scheme="https://septzhang.link/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
+    
+    <category term="JUC" scheme="https://septzhang.link/tags/JUC/"/>
+    
+  </entry>
   
   <entry>
     <title>SDK报错</title>
@@ -32,9 +80,9 @@
     <category term="Java" scheme="https://septzhang.link/categories/Java/"/>
     
     
-    <category term="配置" scheme="https://septzhang.link/tags/%E9%85%8D%E7%BD%AE/"/>
-    
     <category term="开发" scheme="https://septzhang.link/tags/%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="配置" scheme="https://septzhang.link/tags/%E9%85%8D%E7%BD%AE/"/>
     
     <category term="Android" scheme="https://septzhang.link/tags/Android/"/>
     
@@ -56,9 +104,9 @@
     <category term="Java" scheme="https://septzhang.link/categories/Java/"/>
     
     
-    <category term="配置" scheme="https://septzhang.link/tags/%E9%85%8D%E7%BD%AE/"/>
-    
     <category term="开发" scheme="https://septzhang.link/tags/%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="配置" scheme="https://septzhang.link/tags/%E9%85%8D%E7%BD%AE/"/>
     
     <category term="Android" scheme="https://septzhang.link/tags/Android/"/>
     
@@ -145,9 +193,9 @@
     <category term="Linux" scheme="https://septzhang.link/categories/Linux/"/>
     
     
-    <category term="配置" scheme="https://septzhang.link/tags/%E9%85%8D%E7%BD%AE/"/>
-    
     <category term="开发" scheme="https://septzhang.link/tags/%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="配置" scheme="https://septzhang.link/tags/%E9%85%8D%E7%BD%AE/"/>
     
   </entry>
   
@@ -336,9 +384,9 @@
     <category term="Java" scheme="https://septzhang.link/categories/Java/"/>
     
     
-    <category term="配置" scheme="https://septzhang.link/tags/%E9%85%8D%E7%BD%AE/"/>
-    
     <category term="开发" scheme="https://septzhang.link/tags/%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="配置" scheme="https://septzhang.link/tags/%E9%85%8D%E7%BD%AE/"/>
     
     <category term="Spring Boot" scheme="https://septzhang.link/tags/Spring-Boot/"/>
     
@@ -424,66 +472,13 @@
     <category term="Java" scheme="https://septzhang.link/categories/Java/"/>
     
     
-    <category term="配置" scheme="https://septzhang.link/tags/%E9%85%8D%E7%BD%AE/"/>
-    
     <category term="开发" scheme="https://septzhang.link/tags/%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="配置" scheme="https://septzhang.link/tags/%E9%85%8D%E7%BD%AE/"/>
     
     <category term="JavaWeb" scheme="https://septzhang.link/tags/JavaWeb/"/>
     
     <category term="tomcat" scheme="https://septzhang.link/tags/tomcat/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>dependency在pom.xml的配置</title>
-    <link href="https://septzhang.link/posts/52083/"/>
-    <id>https://septzhang.link/posts/52083/</id>
-    <published>2021-06-12T13:18:52.000Z</published>
-    <updated>2021-06-12T13:18:52.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;俺将会把以后添加在maven中的包，整理在这儿，方便以后的开发，要是帮助到您或者有啥建议，请评论留言哦o(&lt;em&gt;////▽////&lt;/em&gt;)q&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://w.wallhaven.cc/full/z8/wallhaven-z8mq8y.jpg&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Java" scheme="https://septzhang.link/categories/Java/"/>
-    
-    
-    <category term="技巧" scheme="https://septzhang.link/tags/%E6%8A%80%E5%B7%A7/"/>
-    
-    <category term="Maven" scheme="https://septzhang.link/tags/Maven/"/>
-    
-    <category term="配置" scheme="https://septzhang.link/tags/%E9%85%8D%E7%BD%AE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>小程序开发配置</title>
-    <link href="https://septzhang.link/posts/52082/"/>
-    <id>https://septzhang.link/posts/52082/</id>
-    <published>2021-06-01T06:25:35.000Z</published>
-    <updated>2021-06-01T06:25:35.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;span</summary>
-        
-      
-    
-    
-    
-    <category term="Java" scheme="https://septzhang.link/categories/Java/"/>
-    
-    
-    <category term="配置" scheme="https://septzhang.link/tags/%E9%85%8D%E7%BD%AE/"/>
-    
-    <category term="开发" scheme="https://septzhang.link/tags/%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="微信小程序" scheme="https://septzhang.link/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
   </entry>
   
