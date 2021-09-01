@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>Spring和SpringBoot容器注入</title>
+    <link href="/posts/42227/"/>
+    <url>/posts/42227/</url>
+    
+    <content type="html"><![CDATA[<span id="more"></span><h1 id="Spring注入"><a href="#Spring注入" class="headerlink" title="Spring注入"></a>Spring注入</h1><h2 id="Spring容器存储bean"><a href="#Spring容器存储bean" class="headerlink" title="Spring容器存储bean"></a>Spring容器存储bean</h2><p>底层：每一个bean对应了一个BeanDefinition对象，每个bean注册到Map中。</p><p>==使用BeanDefintionMap来存储的所有的bean。即springioc就是一个map而已。==</p><p>springioc：负责 对象的<strong>初始化</strong>，对象<strong>管理</strong>，对应的<strong>依赖注入</strong>，对象<strong>声明周期</strong>，对象的<strong>获取</strong>等，一句话：就==对象声明周期的管理==，一般情况下<strong>：jvm不会去回收这块空间，因为它强应用</strong>。==除非调用destory（）方法，才会进行垃圾回收。==</p><h2 id="SpringIoc"><a href="#SpringIoc" class="headerlink" title="SpringIoc"></a>SpringIoc</h2><blockquote><p>springIoc它是spring的最基石，它专门去负责对象的初始化，管理和装配以及获取等相关处理和工作。在对象注册过程中，可能存在类和类之间引用关系，这个关系可能会引发spring中对象的注入，也就依赖注入(DI)。：</p></blockquote><p><strong>依赖注入原则</strong></p><p>1、构造函数注入</p><p>2、set注入</p><p>3、**@Autowired&amp;@Resource注解注入**</p><p>4、<strong>FactoryBean注入（工厂注入）</strong></p><p><strong>什么是SpringIoc：</strong></p><blockquote><p>spring把java中传统的创建对象的过程用容器技术完成，使用容器进行对象装配，方便进行管理和处理。</p><p>好处：可以节约内存空间，方便测试，利于功能复用更重要的是使得程序的整个体系结构变得非常灵活。 </p></blockquote><p><strong>什么是DI：</strong></p><blockquote><p>DI—Dependency Injection，即“依赖注入”：它springioc的容器化技术，在创建对象的过程中，如果发现一个对象中存在另外一个对象的引用的时候，如果你遵循了spring的依赖注入的原则，就会容器中把存在的对象初始化引用对象。但是这种容器化初始化必须要遵循依赖注入原则。</p></blockquote><p><strong>依赖注入原则：</strong></p><p>1、构造函数注入</p><p>2、set注入</p><p>3、**@Autowired&amp;@Resource注解注入**</p><p>4、<strong>FactoryBean注入（工厂注入）</strong></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>SpringBoot</tag>
+      
+      <tag>Spring</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>统一接口返回的标准格式-R</title>
     <link href="/posts/59584/"/>
     <url>/posts/59584/</url>
@@ -78,9 +105,9 @@
     
     <tags>
       
-      <tag>开发</tag>
-      
       <tag>配置</tag>
+      
+      <tag>开发</tag>
       
       <tag>Android</tag>
       
@@ -107,9 +134,9 @@
     
     <tags>
       
-      <tag>开发</tag>
-      
       <tag>配置</tag>
+      
+      <tag>开发</tag>
       
       <tag>Android</tag>
       
@@ -217,9 +244,9 @@
     
     <tags>
       
-      <tag>开发</tag>
-      
       <tag>配置</tag>
+      
+      <tag>开发</tag>
       
     </tags>
     
@@ -286,7 +313,7 @@
   
   
   <entry>
-    <title>Springboot的日志解决方案</title>
+    <title>SpringBoot的日志解决方案</title>
     <link href="/posts/13699/"/>
     <url>/posts/13699/</url>
     
@@ -304,7 +331,7 @@
       
       <tag>通识</tag>
       
-      <tag>Spring Boot</tag>
+      <tag>SpringBoot</tag>
       
       <tag>日志</tag>
       
@@ -429,11 +456,11 @@
     
     <tags>
       
-      <tag>开发</tag>
-      
       <tag>配置</tag>
       
-      <tag>Spring Boot</tag>
+      <tag>开发</tag>
+      
+      <tag>SpringBoot</tag>
       
     </tags>
     
@@ -442,7 +469,7 @@
   
   
   <entry>
-    <title>Spring Boot常用配置说明</title>
+    <title>SpringBoot常用配置说明</title>
     <link href="/posts/33137/"/>
     <url>/posts/33137/</url>
     
@@ -460,7 +487,7 @@
       
       <tag>配置</tag>
       
-      <tag>Spring Boot</tag>
+      <tag>SpringBoot</tag>
       
     </tags>
     
@@ -469,7 +496,7 @@
   
   
   <entry>
-    <title>springboot知识整理</title>
+    <title>springBoot知识整理</title>
     <link href="/posts/4733/"/>
     <url>/posts/4733/</url>
     
@@ -487,7 +514,7 @@
       
       <tag>基础知识</tag>
       
-      <tag>Spring Boot</tag>
+      <tag>SpringBoot</tag>
       
     </tags>
     
@@ -537,9 +564,9 @@
     
     <tags>
       
-      <tag>开发</tag>
-      
       <tag>配置</tag>
+      
+      <tag>开发</tag>
       
       <tag>JavaWeb</tag>
       
@@ -597,9 +624,9 @@
     
     <tags>
       
-      <tag>开发</tag>
-      
       <tag>配置</tag>
+      
+      <tag>开发</tag>
       
       <tag>微信小程序</tag>
       
@@ -709,11 +736,11 @@
     
     <tags>
       
-      <tag>开发</tag>
-      
       <tag>配置</tag>
       
-      <tag>Spring Boot</tag>
+      <tag>开发</tag>
+      
+      <tag>SpringBoot</tag>
       
       <tag>Spring Security</tag>
       
@@ -796,9 +823,9 @@
     
     <tags>
       
-      <tag>开发</tag>
-      
       <tag>配置</tag>
+      
+      <tag>开发</tag>
       
       <tag>Swagger</tag>
       
@@ -856,9 +883,9 @@
     
     <tags>
       
-      <tag>开发</tag>
-      
       <tag>配置</tag>
+      
+      <tag>开发</tag>
       
       <tag>Spring MVC</tag>
       

@@ -6,7 +6,7 @@
   <link href="https://septzhang.link/atom.xml" rel="self"/>
   
   <link href="https://septzhang.link/"/>
-  <updated>2021-08-30T13:47:22.000Z</updated>
+  <updated>2021-09-01T01:03:28.000Z</updated>
   <id>https://septzhang.link/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Spring和SpringBoot容器注入</title>
+    <link href="https://septzhang.link/posts/42227/"/>
+    <id>https://septzhang.link/posts/42227/</id>
+    <published>2021-09-01T01:03:28.000Z</published>
+    <updated>2021-09-01T01:03:28.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+
+&lt;h1 id=&quot;Spring注入&quot;&gt;&lt;a href=&quot;#Spring注入&quot; class=&quot;headerlink&quot; title=&quot;Spring注入&quot;&gt;&lt;/a&gt;Spring注入&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="https://septzhang.link/categories/Java/"/>
+    
+    
+    <category term="SpringBoot" scheme="https://septzhang.link/tags/SpringBoot/"/>
+    
+    <category term="Spring" scheme="https://septzhang.link/tags/Spring/"/>
+    
+  </entry>
   
   <entry>
     <title>统一接口返回的标准格式-R</title>
@@ -80,9 +109,9 @@
     <category term="Java" scheme="https://septzhang.link/categories/Java/"/>
     
     
-    <category term="开发" scheme="https://septzhang.link/tags/%E5%BC%80%E5%8F%91/"/>
-    
     <category term="配置" scheme="https://septzhang.link/tags/%E9%85%8D%E7%BD%AE/"/>
+    
+    <category term="开发" scheme="https://septzhang.link/tags/%E5%BC%80%E5%8F%91/"/>
     
     <category term="Android" scheme="https://septzhang.link/tags/Android/"/>
     
@@ -104,9 +133,9 @@
     <category term="Java" scheme="https://septzhang.link/categories/Java/"/>
     
     
-    <category term="开发" scheme="https://septzhang.link/tags/%E5%BC%80%E5%8F%91/"/>
-    
     <category term="配置" scheme="https://septzhang.link/tags/%E9%85%8D%E7%BD%AE/"/>
+    
+    <category term="开发" scheme="https://septzhang.link/tags/%E5%BC%80%E5%8F%91/"/>
     
     <category term="Android" scheme="https://septzhang.link/tags/Android/"/>
     
@@ -193,9 +222,9 @@
     <category term="Linux" scheme="https://septzhang.link/categories/Linux/"/>
     
     
-    <category term="开发" scheme="https://septzhang.link/tags/%E5%BC%80%E5%8F%91/"/>
-    
     <category term="配置" scheme="https://septzhang.link/tags/%E9%85%8D%E7%BD%AE/"/>
+    
+    <category term="开发" scheme="https://septzhang.link/tags/%E5%BC%80%E5%8F%91/"/>
     
   </entry>
   
@@ -248,7 +277,7 @@
   </entry>
   
   <entry>
-    <title>Springboot的日志解决方案</title>
+    <title>SpringBoot的日志解决方案</title>
     <link href="https://septzhang.link/posts/13699/"/>
     <id>https://septzhang.link/posts/13699/</id>
     <published>2021-07-21T01:53:36.000Z</published>
@@ -264,7 +293,7 @@
     
     <category term="通识" scheme="https://septzhang.link/tags/%E9%80%9A%E8%AF%86/"/>
     
-    <category term="Spring Boot" scheme="https://septzhang.link/tags/Spring-Boot/"/>
+    <category term="SpringBoot" scheme="https://septzhang.link/tags/SpringBoot/"/>
     
     <category term="日志" scheme="https://septzhang.link/tags/%E6%97%A5%E5%BF%97/"/>
     
@@ -384,16 +413,16 @@
     <category term="Java" scheme="https://septzhang.link/categories/Java/"/>
     
     
-    <category term="开发" scheme="https://septzhang.link/tags/%E5%BC%80%E5%8F%91/"/>
-    
     <category term="配置" scheme="https://septzhang.link/tags/%E9%85%8D%E7%BD%AE/"/>
     
-    <category term="Spring Boot" scheme="https://septzhang.link/tags/Spring-Boot/"/>
+    <category term="开发" scheme="https://septzhang.link/tags/%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="SpringBoot" scheme="https://septzhang.link/tags/SpringBoot/"/>
     
   </entry>
   
   <entry>
-    <title>Spring Boot常用配置说明</title>
+    <title>SpringBoot常用配置说明</title>
     <link href="https://septzhang.link/posts/33137/"/>
     <id>https://septzhang.link/posts/33137/</id>
     <published>2021-06-20T12:28:44.000Z</published>
@@ -410,12 +439,12 @@
     
     <category term="配置" scheme="https://septzhang.link/tags/%E9%85%8D%E7%BD%AE/"/>
     
-    <category term="Spring Boot" scheme="https://septzhang.link/tags/Spring-Boot/"/>
+    <category term="SpringBoot" scheme="https://septzhang.link/tags/SpringBoot/"/>
     
   </entry>
   
   <entry>
-    <title>springboot知识整理</title>
+    <title>springBoot知识整理</title>
     <link href="https://septzhang.link/posts/4733/"/>
     <id>https://septzhang.link/posts/4733/</id>
     <published>2021-06-20T12:19:13.000Z</published>
@@ -431,7 +460,7 @@
     
     <category term="基础知识" scheme="https://septzhang.link/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
-    <category term="Spring Boot" scheme="https://septzhang.link/tags/Spring-Boot/"/>
+    <category term="SpringBoot" scheme="https://septzhang.link/tags/SpringBoot/"/>
     
   </entry>
   
@@ -452,33 +481,6 @@
     
     
     <category term="Hexo" scheme="https://septzhang.link/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Tomcat 在 Javaweb中出现的页面404问题</title>
-    <link href="https://septzhang.link/posts/51242/"/>
-    <id>https://septzhang.link/posts/51242/</id>
-    <published>2021-06-14T04:49:19.000Z</published>
-    <updated>2021-06-14T04:49:19.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://view.lixingyong.com/images/2020/07/15/--_.jpg&quot; alt=&quot;--_.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;主要是在Javaweb中tomcat的配置出现的问题，但是Springboot就没有出现。&lt;/p&gt;
-&lt;p&gt;Spring boot yydsヾ(≧∇≦*)ゝ！！&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Java" scheme="https://septzhang.link/categories/Java/"/>
-    
-    
-    <category term="开发" scheme="https://septzhang.link/tags/%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="配置" scheme="https://septzhang.link/tags/%E9%85%8D%E7%BD%AE/"/>
-    
-    <category term="JavaWeb" scheme="https://septzhang.link/tags/JavaWeb/"/>
-    
-    <category term="tomcat" scheme="https://septzhang.link/tags/tomcat/"/>
     
   </entry>
   
