@@ -17,11 +17,11 @@
   
   <meta name="theme-color" content="#2f4154">
   <meta name="description" content="
-二分查找的相关算法题目。。">
+二分查找的分析，这个方法真是太好用了，感谢这个B~站大佬。">
   <meta name="author" content="SeptZhang">
   <meta name="keywords" content="Java,Mysql,SpringBoot">
   
-  <title>算法练习01 -by SeptZhang</title>
+  <title>二分查找法总结 -by SeptZhang</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
@@ -203,7 +203,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="算法练习01">
+            <span class="h2" id="subtitle" title="二分查找法总结">
               
             </span>
 
@@ -225,7 +225,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      451 字
+      721 字
     </span>
   
 
@@ -235,7 +235,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       俺猜宁得用 
-      5
+      9
        分钟
     </span>
   
@@ -273,7 +273,7 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">算法练习01</h1>
+            <h1 style="display: none">二分查找法总结</h1>
             
               <p class="note note-info">
                 
@@ -283,10 +283,21 @@
             
             <div class="markdown-body">
               <p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/10576d3617802dc045024d5edd7ea90d.jpg" srcset="/img/loading.gif" lazyload alt="10576d3617802dc045024d5edd7ea90d.jpg"></p>
-<p>二分查找的相关算法题目。。</p>
+<p>二分查找的分析，这个方法真是太好用了，感谢这个B~站大佬。</p>
 <span id="more"></span>
 
-<h2 id="二分法"><a href="#二分法" class="headerlink" title="二分法"></a>二分法</h2><h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p>给定一个 n 个元素有序的（升序）整型数组 nums 和一个目标值 target  ，写一个函数搜索 nums 中的 target，如果目标值存在返回下标，否则返回 -1。</p>
+<h1 id="二分法"><a href="#二分法" class="headerlink" title="二分法"></a>二分法</h1><h2 id="通用步骤"><a href="#通用步骤" class="headerlink" title="通用步骤"></a>通用步骤</h2><h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p>将二分法的处理过程划分成左右两个区域的 动态变化 的过程。当<code>Left</code>和<code>Right</code> 相差唯一时，结束循环，提交结果。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/image-20210902091658125.png" srcset="/img/loading.gif" lazyload alt="分析过程"></p>
+<h3 id="划归"><a href="#划归" class="headerlink" title="划归"></a>划归</h3><p>将问题划归为左右两个区域的动态变化问题，最后提交一个L/R的值。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/image-20210902091316763.png" srcset="/img/loading.gif" lazyload alt="划归问题"></p>
+<h3 id="套路"><a href="#套路" class="headerlink" title="套路"></a>套路</h3><figure class="highlight java"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">searchInsert</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] nums, <span class="hljs-keyword">int</span> target)</span> </span>&#123;<br>    <span class="hljs-keyword">int</span> left = -<span class="hljs-number">1</span>;<span class="hljs-comment">//左边界-1</span><br>    <span class="hljs-keyword">int</span> right = nums.length;<span class="hljs-comment">//右边界+1</span><br>    <span class="hljs-keyword">int</span> middle = (left + right) / <span class="hljs-number">2</span>;<span class="hljs-comment">//中间值</span><br>    <span class="hljs-keyword">while</span>(left + <span class="hljs-number">1</span> != right)&#123;  <span class="hljs-comment">//L和R相差1时，结束</span><br>        <span class="hljs-comment">//分析与划归片段，需要自行分析</span><br>        <span class="hljs-keyword">if</span> (middle == nums[middle])&#123;<br>            <span class="hljs-keyword">return</span> middle;<br>        &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (target &gt; nums[middle])&#123;<br>            left = middle;<br>        &#125;<span class="hljs-keyword">else</span>&#123;<br>            right = middle;<br>        &#125;<br>        <span class="hljs-comment">//-----------------</span><br>        middle = left + (right - left)/<span class="hljs-number">2</span>;<span class="hljs-comment">////重新定位去中间值指针</span><br>    &#125;<br>    <span class="hljs-keyword">return</span> right;<span class="hljs-comment">//分析与划归分析，确定返回L或R</span><br>&#125;<br></code></pre></div></td></tr></table></figure>
+
+
+
+<h3 id="注意问题"><a href="#注意问题" class="headerlink" title="注意问题"></a>注意问题</h3><h4 id="m是否始终处于-0-N-以内"><a href="#m是否始终处于-0-N-以内" class="headerlink" title="m是否始终处于[0, N)以内?"></a>m是否始终处于[0, N)以内?</h4><p>始终处于区间内。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/image-20210902092506294.png" srcset="/img/loading.gif" lazyload alt="问题1"></p>
+<h4 id="更新指针时，能不能写成l-m-1-或者r-m-1"><a href="#更新指针时，能不能写成l-m-1-或者r-m-1" class="headerlink" title="更新指针时，能不能写成l=m+1,或者r=m- 1?"></a>更新指针时，能不能写成l=m+1,或者r=m- 1?</h4><p>不能，在这个方法里，会冲突，溢出。</p>
+<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>给定一个 n 个元素有序的（升序）整型数组 nums 和一个目标值 target  ，写一个函数搜索 nums 中的 target，如果目标值存在返回下标，否则返回 -1。</p>
 <p>示例 1:</p>
 <blockquote>
 <p>输入: nums = [-1,0,3,5,9,12], target = 9<br>输出: 4<br>解释: 9 出现在 nums 中并且下标为 4<br>示例 2:</p>
@@ -302,7 +313,7 @@
 <li><code>nums</code> 的每个元素都将在 <code>[-9999, 9999]</code>之间。</li>
 </ol>
 </blockquote>
-<h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p>方法：二分查找<br>二分查找是一种基于比较目标值和数组中间元素的教科书式算法。</p>
+<h3 id="分析-1"><a href="#分析-1" class="headerlink" title="分析"></a>分析</h3><p>方法：二分查找<br>二分查找是一种基于比较目标值和数组中间元素的教科书式算法。</p>
 <ul>
 <li>如果目标值等于中间元素，则找到目标值。</li>
 <li>如果目标值较小，继续在左侧搜索。</li>
@@ -319,10 +330,13 @@
 <h3 id="易错"><a href="#易错" class="headerlink" title="易错"></a>易错</h3><figure class="highlight java"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs java"><span class="hljs-keyword">if</span> (target &lt; nums[pivot]) right = pivot - <span class="hljs-number">1</span>;<br><span class="hljs-keyword">else</span> left = pivot + <span class="hljs-number">1</span>;<br></code></pre></div></td></tr></table></figure>
 
 <p>左右多移动一格，可以避免，不存在列表的数字，在游标函数相差为1的时候进入<strong>死循环</strong>。</p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>作者：LeetCode</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><blockquote>
+<p>作者：LeetCode</p>
 <p>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/binary-search/solution/er-fen-cha-zhao-by-leetcode/">https://leetcode-cn.com/problems/binary-search/solution/er-fen-cha-zhao-by-leetcode/</a></p>
 <p>来源：力扣（LeetCode）</p>
 <p>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1d54y1q7k7?share_source=copy_web">二分查找为什么总是写错？</a></p>
 
             </div>
             <hr>

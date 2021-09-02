@@ -16,13 +16,30 @@
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="SeptZhang的养猪站">
+  <meta name="description" content="
+面试遇到的问题，让我蒙对了，赶紧整理下来。">
   <meta name="author" content="SeptZhang">
   <meta name="keywords" content="Java,Mysql,SpringBoot">
   
-  <title>归档 -by SeptZhang</title>
+  <title>单链表是否有环及环的链接点 -by SeptZhang</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/pojoaque.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
 
 
 
@@ -51,7 +68,7 @@
 
 
 <body>
-  <header style="height: 60vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -181,14 +198,59 @@
 </nav>
 
     <div class="banner" id="banner" parallax=true
-         style="background: url('/img/default.png') no-repeat center center;
+         style="background: url('/img/bg.svg') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="归档">
+            <span class="h2" id="subtitle" title="单链表是否有环及环的链接点">
               
             </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-09-02 20:41" pubdate>
+        2021年9月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      231 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      俺猜宁得用 
+      2
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- 不蒜子统计文章PV -->
+      <span id="busuanzi_container_page_pv" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="busuanzi_value_page_pv"></span> 次
+      </span>
+    
+  
+</div>
 
             
           </div>
@@ -201,100 +263,102 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">共计 49 篇文章</p>
-  <hr>
-  
-  
-    
       
-      <p class="h5">2021</p>
-    
-    <a href="/posts/30044/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">Redis在项目中的作用</span>
-      <time style="float: right;">07-22</time>
-    </a>
-  
-    
-    <a href="/posts/10403/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">免费又好用的图床谁不爱呢</span>
-      <time style="float: right;">07-21</time>
-    </a>
-  
-    
-    <a href="/posts/13699/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">SpringBoot的日志解决方案</span>
-      <time style="float: right;">07-21</time>
-    </a>
-  
-    
-    <a href="/posts/61119/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">SQLite的使用</span>
-      <time style="float: right;">07-15</time>
-    </a>
-  
-    
-    <a href="/posts/11477/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">AndroidStudio的使用</span>
-      <time style="float: right;">07-12</time>
-    </a>
-  
-    
-    <a href="/posts/57755/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">SVN的使用</span>
-      <time style="float: right;">07-11</time>
-    </a>
-  
-    
-    <a href="/posts/15711/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">ZD-710振动传感器</span>
-      <time style="float: right;">07-10</time>
-    </a>
-  
-    
-    <a href="/posts/9914/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">SpringBoot常用注解</span>
-      <time style="float: right;">06-22</time>
-    </a>
-  
-    
-    <a href="/posts/33137/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">SpringBoot常用配置说明</span>
-      <time style="float: right;">06-20</time>
-    </a>
-  
-    
-    <a href="/posts/4733/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">springBoot知识整理</span>
-      <time style="float: right;">06-20</time>
-    </a>
-  
-</div>
 
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">单链表是否有环及环的链接点</h1>
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：38 分钟前
+                
+              </p>
+            
+            <div class="markdown-body">
+              <p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/th.jpg" srcset="/img/loading.gif" lazyload alt="th.jpg"></p>
+<p>面试遇到的问题，让我蒙对了，赶紧整理下来。</p>
+<span id="more"></span>
 
-  <nav aria-label="navigation">
-    <span class="pagination" id="pagination">
-      <a class="extend prev" rel="prev" href="/archives/2021/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/archives/2021/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/2021/page/3/#board">3</a><a class="page-number" href="/archives/2021/page/4/#board">4</a><a class="page-number" href="/archives/2021/page/5/#board">5</a><a class="extend next" rel="next" href="/archives/2021/page/3/#board"><i class="iconfont icon-arrowright"></i></a>
-    </span>
-  </nav>
+<h1 id="1、如何判断是否存在环？"><a href="#1、如何判断是否存在环？" class="headerlink" title="1、如何判断是否存在环？"></a>1、如何判断是否存在环？</h1><p>使用追赶的方法，设定两个指针slow、fast，从头指针开始，每次分别前进1步、2步。如存在环，则两者相遇；如不存在环，fast遇到NULL退出。</p>
+<h1 id="2、如何知道环的长度？"><a href="#2、如何知道环的长度？" class="headerlink" title="2、如何知道环的长度？"></a>2、如何知道环的长度？</h1><p>记录下指针slow和fast的碰撞点p，slow、fast从该点开始，再次碰撞所走过的操作数就是环的长度s。</p>
+<h1 id="3、如何找出环的连接点在哪里？"><a href="#3、如何找出环的连接点在哪里？" class="headerlink" title="3、如何找出环的连接点在哪里？"></a>3、如何找出环的连接点在哪里？</h1><p>定理：==碰撞点p到连接点的距离=头指针到连接点的距离==，因此，分别从碰撞点、头指针开始走，相遇的那个点就是连接点。</p>
+<h1 id="4、带环链表的长度是多少？"><a href="#4、带环链表的长度是多少？" class="headerlink" title="4、带环链表的长度是多少？"></a>4、带环链表的长度是多少？</h1><p>求出连接点距离头指针的长度，加上求出的环的长度，二者之和就是带环单链表的长度。</p>
 
-
-
-
-              </div>
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E9%80%9A%E8%AF%86/">通识</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/posts/42227/">
+                        <span class="hidden-mobile">Spring和SpringBoot容器注入</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
 
     
@@ -398,9 +462,15 @@
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
 
 
 

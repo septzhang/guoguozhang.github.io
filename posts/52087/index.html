@@ -283,18 +283,18 @@
               </p>
             
             <div class="markdown-body">
-              <p><img src="https://view.moezx.cc/images/2017/12/02/DEEMOShatteredMemoriesPID55501293bysishenfan.jpg" srcset="/img/loading.gif" lazyload alt="DEEMOShatteredMemoriesPID55501293bysishenfan.jpg"></p>
+              <p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/DEEMOShatteredMemoriesPID55501293bysishenfan.jpg" srcset="/img/loading.gif" lazyload alt="DEEMOShatteredMemoriesPID55501293bysishenfan.jpg"></p>
 <p>可恶嗷，又有端口被占用了，看我的大宝贝吧 ( ‵▽′)ψ</p>
 <p>就两步解决。</p>
 <span id="more"></span>
 
 <h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><h2 id="管理员打开命令提示符"><a href="#管理员打开命令提示符" class="headerlink" title="管理员打开命令提示符"></a>管理员打开命令提示符</h2><h2 id="查询8080端口，得到进程pid"><a href="#查询8080端口，得到进程pid" class="headerlink" title="查询8080端口，得到进程pid"></a>查询8080端口，得到进程pid</h2><h3 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h3><p><code>netstat -nao | findstr “8080”</code></p>
 <p><strong>8080</strong>换成你的端口号</p>
-<h3 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h3><p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting@master/20210407/image.5prd4euqt7c0.png" srcset="/img/loading.gif" lazyload alt="image"></p>
+<h3 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h3><p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/image.5prd4euqt7c0.png" srcset="/img/loading.gif" lazyload alt="image"></p>
 <h2 id="关闭对应的pid的进程"><a href="#关闭对应的pid的进程" class="headerlink" title="关闭对应的pid的进程"></a>关闭对应的pid的进程</h2><h3 id="指令-1"><a href="#指令-1" class="headerlink" title="指令"></a>指令</h3><p><code>taskkill /pid 12696 /F</code></p>
 <p>10736换成你的pid</p>
-<h3 id="运行结果-1"><a href="#运行结果-1" class="headerlink" title="运行结果"></a>运行结果</h3><p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting@master/20210407/image.3695i0mu2kc0.png" srcset="/img/loading.gif" lazyload alt="image"></p>
-<h1 id="详解"><a href="#详解" class="headerlink" title="详解"></a>详解</h1><h2 id="查询pid"><a href="#查询pid" class="headerlink" title="查询pid"></a>查询pid</h2><p>但往往很多时候只需要查看某个端口的使用情况，它到底被那个进程（对应PID）占用了，或者你还需要把它Kill掉。如果你在Windows操作系统，你可以使用netstat命令来查询PID，然后可以打开任务管理器，查看这个PID对应的进程名；如果PID没有显示，菜单==》查看==》选择列==》选中PID即可；得知进程后，我们可以将进程杀掉。下面我简单描述一下我所了解的在Windows和Linux系统下处理方式。（假如我们需要确定谁占用了我们的8080端口）</p>
+<h3 id="运行结果-1"><a href="#运行结果-1" class="headerlink" title="运行结果"></a>运行结果</h3><p><img src="https://cdn.jsdelivr.net/gh/septzhang/image-hosting/picgo/image.3695i0mu2kc0.png" srcset="/img/loading.gif" lazyload alt="image"></p>
+<h1 id="详解"><a href="#详解" class="headerlink" title="详解"></a>详解</h1><h2 id="查询pid"><a href="#查询pid" class="headerlink" title="查询pid"></a>查询pid</h2><p>但往往很多时候只需要查看某个端口的使用情况，它到底被那个进程（对应PID）占用了，或者你还需要把它Kill掉。如果你在Windows操作系统，你可以使用netstat命令来查询PID，然后可以打开任务管理器，查看这个PID对应的进程名；如果PID没有显示，菜单== 》查看 == 》选择列== 》选中PID即可；得知进程后，我们可以将进程杀掉。下面我简单描述一下我所了解的在Windows和Linux系统下处理方式。（假如我们需要确定谁占用了我们的8080端口）</p>
 <h2 id="关闭进程"><a href="#关闭进程" class="headerlink" title="关闭进程"></a>关闭进程</h2><p>你看到是PID为3017的进程占用了8080端口，如果进一步你想知道它的进程名称，你可以使用如下命令：tasklist | findstr “3017” 如果你想杀死这个进程，你当然可以用前面描述的那种方法，在任务管理器里把它KILL了，但如果你喜欢高效一点，那么用taskkill命令就可以了。taskkill /pid 3017 /F那么这个进程就灰灰湮灭了</p>
 
             </div>
