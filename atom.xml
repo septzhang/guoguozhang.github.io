@@ -6,7 +6,7 @@
   <link href="https://septzhang.xyz/atom.xml" rel="self"/>
   
   <link href="https://septzhang.xyz/"/>
-  <updated>2023-04-07T12:32:57.000Z</updated>
+  <updated>2024-08-08T14:03:26.000Z</updated>
   <id>https://septzhang.xyz/</id>
   
   <author>
@@ -15,6 +15,64 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>模型调优-梯度下降</title>
+    <link href="https://septzhang.xyz/posts/21024/"/>
+    <id>https://septzhang.xyz/posts/21024/</id>
+    <published>2024-08-08T14:03:26.000Z</published>
+    <updated>2024-08-08T14:03:26.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+
+&lt;p&gt;梯度下降（Gradient Descent）是一种常用的优化算法，广泛应用于机器学习和深度学习模型的训练过程中。其基本思想是通过迭代地调整模型参数，使得损失函数（Loss</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="https://septzhang.xyz/categories/Java/"/>
+    
+    
+    <category term="LLM" scheme="https://septzhang.xyz/tags/LLM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Harmonyos基本知识点整理</title>
+    <link href="https://septzhang.xyz/posts/49398/"/>
+    <id>https://septzhang.xyz/posts/49398/</id>
+    <published>2024-04-11T02:48:39.000Z</published>
+    <updated>2024-04-11T02:48:39.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+
+&lt;h1 id=&quot;Harmonyos基本知识点整理&quot;&gt;&lt;a href=&quot;#Harmonyos基本知识点整理&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="https://septzhang.xyz/categories/Java/"/>
+    
+    
+    <category term="Harmonyos" scheme="https://septzhang.xyz/tags/Harmonyos/"/>
+    
+    <category term="基本知识点" scheme="https://septzhang.xyz/tags/%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+    
+    <category term="ArkTs" scheme="https://septzhang.xyz/tags/ArkTs/"/>
+    
+  </entry>
   
   <entry>
     <title>apt/apt-get源配置</title>
@@ -385,44 +443,6 @@
     
     
     <category term="框架" scheme="https://septzhang.xyz/tags/%E6%A1%86%E6%9E%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Nginx使用手册</title>
-    <link href="https://septzhang.xyz/posts/33580/"/>
-    <id>https://septzhang.xyz/posts/33580/</id>
-    <published>2022-04-18T10:40:21.000Z</published>
-    <updated>2022-04-18T10:40:21.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;记录Nginx的使用&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Nginx" scheme="https://septzhang.xyz/categories/Nginx/"/>
-    
-    
-    <category term="使用手册" scheme="https://septzhang.xyz/tags/%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>微信AccessToken中控服务器开发</title>
-    <link href="https://septzhang.xyz/posts/45710/"/>
-    <id>https://septzhang.xyz/posts/45710/</id>
-    <published>2022-04-16T12:26:21.000Z</published>
-    <updated>2022-04-16T12:26:21.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;微信官方对于每日接口调用的次数都做了限制，这其中包括了生成access_token的接口，因此官方建议开发者使用中控服务器统一获取和刷新access_token。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Java" scheme="https://septzhang.xyz/categories/Java/"/>
-    
-    
-    <category term="微信小程序" scheme="https://septzhang.xyz/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
   </entry>
   
