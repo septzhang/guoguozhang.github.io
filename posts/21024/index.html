@@ -216,8 +216,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2024-08-08 22:03" pubdate>
-        2024年8月8日 晚上
+      <time datetime="2024-07-01 22:03" pubdate>
+        2024年7月1日 晚上
       </time>
     </span>
   
@@ -228,7 +228,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      851 字
+      794 字
     </span>
   
 
@@ -238,7 +238,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       俺猜宁得用 
-      10
+      9
        分钟
     </span>
   
@@ -280,7 +280,7 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：20 分钟前
+                  本文最后更新于：23 分钟前
                 
               </p>
             
@@ -321,15 +321,7 @@
 <li><strong>自适应学习率</strong>：如Adam、RMSprop等优化算法，自动调整学习率。</li>
 </ul>
 <h3 id="4-常用的梯度下降优化算法"><a href="#4-常用的梯度下降优化算法" class="headerlink" title="4. 常用的梯度下降优化算法"></a>4. 常用的梯度下降优化算法</h3><h4 id="Adam（Adaptive-Moment-Estimation）"><a href="#Adam（Adaptive-Moment-Estimation）" class="headerlink" title="Adam（Adaptive Moment Estimation）"></a>Adam（Adaptive Moment Estimation）</h4><p>Adam结合了动量（Momentum）和RMSprop的优点，能够自适应地调整学习率。其更新规则如下：<br>[<br>m_t = \beta_1 m_{t-1} + (1 - \beta_1) \nabla_\theta L(\theta)<br>]<br>[<br>v_t = \beta_2 v_{t-1} + (1 - \beta_2) (\nabla_\theta L(\theta))^2<br>]<br>[<br>\hat{m}_t = \frac{m_t}{1 - \beta_1^t}<br>]<br>[<br>\hat{v}_t = \frac{v_t}{1 - \beta_2^t}<br>]<br>[<br>\theta = \theta - \eta \frac{\hat{m}_t}{\sqrt{\hat{v}_t} + \epsilon}<br>]<br>其中，( \beta_1 ) 和 ( \beta_2 ) 是动量项的指数衰减率，( \epsilon ) 是一个小常数，用于防止除零错误。</p>
-<p>参考文献：</p>
-<ul>
-<li>Kingma, D. P., &amp; Ba, J. (2014). Adam: A method for stochastic optimization. arXiv preprint arXiv:1412.6980.</li>
-</ul>
 <h4 id="RMSprop"><a href="#RMSprop" class="headerlink" title="RMSprop"></a>RMSprop</h4><p>RMSprop通过对梯度平方的指数加权移动平均来调整学习率：<br>[<br>E[\nabla_\theta L(\theta)^2]<em>t = \beta E[\nabla_\theta L(\theta)^2]</em>{t-1} + (1 - \beta) (\nabla_\theta L(\theta))^2<br>]<br>[<br>\theta = \theta - \eta \frac{\nabla_\theta L(\theta)}{\sqrt{E[\nabla_\theta L(\theta)^2]_t} + \epsilon}<br>]</p>
-<p>参考文献：</p>
-<ul>
-<li>Tieleman, T., &amp; Hinton, G. (2012). Lecture 6.5-rmsprop: Divide the gradient by a running average of its recent magnitude. COURSERA: Neural Networks for Machine Learning, 4(2), 26-31.</li>
-</ul>
 <h3 id="5-梯度下降的局限性"><a href="#5-梯度下降的局限性" class="headerlink" title="5. 梯度下降的局限性"></a>5. 梯度下降的局限性</h3><ul>
 <li><strong>局部最小值</strong>：梯度下降可能陷入局部最小值，尤其是在非凸损失函数中。</li>
 <li><strong>鞍点</strong>：在高维空间中，梯度下降可能在鞍点处停滞。</li>
@@ -344,7 +336,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/Java/">Java</a>
+                      <a class="hover-with-bg" href="/categories/LLM/">LLM</a>
                     
                   </div>
                 
@@ -352,7 +344,7 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/LLM/">LLM</a>
+                      <a class="hover-with-bg" href="/tags/Prompr/">Prompr</a>
                     
                   </div>
                 
